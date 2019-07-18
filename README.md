@@ -1,3 +1,3 @@
-# Ael-Works
+# AelWorks
 Portfolio Web Page  
-https://laelsirus.github.io/Ael-Works/
+https://laelsirus.github.io/AelWorks/
