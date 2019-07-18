@@ -1,4 +1,4 @@
 # AelWorks
 Portfolio Web Page  
-http://laelsirus.rf.gd  
-https://laelsirus.github.io/AelWorks
+http://www.laelsirus.rf.gd  
+https://www.laelsirus.github.io/AelWorks
