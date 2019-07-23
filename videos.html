@@ -12,6 +12,11 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $("#dots").click(function(){ 
+    $("#dotsToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
   $("#dongju").click(function(){ 
     $("#dongjuToggle").toggle(1000);
   });
@@ -136,7 +141,27 @@ $(document).ready(function(){
     <br>
     <br>
     <h2>
-      Dongju : An Eternal Momnet - Theatre, 2019
+      Dots ; Pixel Mickey Mousing - Audio from Visual, 2019
+    </h2>
+    <p>
+      <br>
+      <br>
+      <iframe width="90%" height="480" src="https://www.youtube.com/embed/INR7GamvhBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="dots">Credit</button>
+      <br>
+      <p2 id="dotsToggle" style="display:none;">
+        Audio from Visual
+        <br>
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <h2>
+      Dongju : An Eternal Moment - Theatre, 2019
     </h2>
     <p>
       융복합 무대기술을 화용한 공연예술 Art & Technology 지원사업 선정작, 극단 서울공장
@@ -150,7 +175,7 @@ $(document).ready(function(){
       <button id="dongju">Credit</button>
       <br>
       <p2 id="dongjuToggle" style="display:none;">
-        Dongju : An Eternal Momnet
+        Dongju : An Eternal Moment
         <br>
         Theatre, 2019
         <br>
