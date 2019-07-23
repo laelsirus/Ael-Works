@@ -147,7 +147,7 @@ class CellMovementTop {
 
     if (infect == 1) {
       recover = 15;
-      cellSize = 20;
+      cellSize = 13;
       healthy = 0;
       stepProb = 12;
     }    
@@ -201,7 +201,7 @@ class CellMovementBottom {
     
     if (infect == 1) {
       recover = 15;
-      cellSize = 20;
+      cellSize = 13;
       healthy = 0;
       stepProb = 12;
     }    
