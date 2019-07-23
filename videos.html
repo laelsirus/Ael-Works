@@ -17,6 +17,11 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $("#regeneration").click(function(){ 
+    $("#regenerationToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
   $("#dongju").click(function(){ 
     $("#dongjuToggle").toggle(1000);
   });
@@ -149,12 +154,10 @@ $(document).ready(function(){
        <a href="regeneration/index.html"><img src="visual/regeneration.png" alt="regeneration" width="90%" height="480"></a>
 
       <br>
-      <button id="dots">Credit</button>
+      <button id="regeneration">Credit</button>
       <br>
-      <p2 id="dotsToggle" style="display:none;">
-        Dots ; Pixel Mickey Mousing
-        <br>
-        Mickey Mousing from Pixel : Norman McLaren - Dots, 1940
+      <p2 id="regenerationToggle" style="display:none;">
+        Visualization of regeneration
         <br>
       </p2>
     </p>
