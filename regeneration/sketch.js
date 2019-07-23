@@ -11,29 +11,38 @@ let cellSize;
 let healthy;
 
 function setup() {
-  title = createElement('h2', "<a href='https://laelsirus.github.io/AelWorks/videos.html'> HOME</a> regeneration");
-  title.position(20, 0);
+  title = createElement('h2', "<a href='https://laelsirus.github.io/AelWorks/videos.html'> VIDEOS</a>");
+  title.position(40, 0);
 
-  canvas = createCanvas(1440, 540);
-  canvas.position(20, 120);
+  canvas = createCanvas(windowWidth, windowHeight * 0.7);
+  canvas.position(0, 200);
   canvas.class("artwork");
 
+  description0 = "\
+  regeneration \
+  ";
+
   description1 = "\
-  떨어진 신경 세포의 재생, 결합, 손상을 시각화 <br/> \
-  상처받고 아물고 흉터가 생기고 성장한다 \
+  Visualization of regeneration, binding, and damage of detached neurons <br/> \
+  Hurt, heal, scar and grow \
   ";
 
   description2 = "\
-  클릭을 유지하면 세포의 손상이 발생합니다 \
+  - Keeping the clicks will cause cell damage \
   ";
 
+  text = createDiv(description0);
+  text.position(30, 60);
+  text.style("font-family", "monospace");
+  text.style("font-size", "20pt")
+
   text = createDiv(description1);
-  text.position(20, 60);
+  text.position(50, 100);
   text.style("font-family", "monospace");
   text.style("font-size", "12pt");
 
   text = createDiv(description2);
-  text.position(20, 680);
+  text.position(50, 140);
   text.style("font-family", "monospace");
   text.style("font-size", "10pt");
 
@@ -43,10 +52,10 @@ function setup() {
   infect = 0;
   stepProb = 13;
   
-  for (var i = 0; i < 150; i++) {
+  for (var i = 0; i < windowWidth * windowWidth / 10000; i++) {
      cellMovementTop[i] = new CellMovementTop();
   }
-  for (var j = 0; j < 150; j++) {
+  for (var j = 0; j < windowWidth * windowWidth / 10000; j++) {
      cellMovementBottom[j] = new CellMovementBottom(); 
   } 
 }
@@ -91,9 +100,20 @@ function draw() {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight * 0.7);
+
+  for (var i = 0; i < windowWidth * windowWidth / 10000; i++) {
+     cellMovementTop[i] = new CellMovementTop();
+  }
+  for (var j = 0; j < windowWidth * windowWidth / 10000; j++) {
+     cellMovementBottom[j] = new CellMovementBottom(); 
+  } 
+}
+
 class CellMovementTop {
   constructor(){
-    this.x = random(width);
+    this.x = random(windowWidth);
     this.y = -30;
   }
 
@@ -116,7 +136,7 @@ class CellMovementTop {
     else if (choice > 10) {
       this.y = this.y + speedABS;
     }
-    this.x = constrain(this.x ,-10, width + 10);
+    this.x = constrain(this.x ,-10, windowWidth + 10);
 
     if (infect == 1) {
       this.y = constrain(this.y, -30, height / 2); 
@@ -147,7 +167,7 @@ class CellMovementTop {
 
 class CellMovementBottom {
   constructor(){
-    this.x = random(width);
+    this.x = random(windowWidth);
     this.y = height + 30;
   }
 
@@ -170,7 +190,7 @@ class CellMovementBottom {
     else if (choice > 10) {
       this.y = this.y - speedABS;
     }
-    this.x = constrain(this.x, -10, width + 10);
+    this.x = constrain(this.x, -10, windowWidth + 10);
     
     if (infect == 1) {
       this.y = constrain(this.y, height / 2, height + 30); 
