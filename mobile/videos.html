@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ael Works</title>
+<link href="style.css?Version=1.0" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){            
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+    });
+}); 
+
+$(document).ready(function(){
+  $("#fluid").click(function(){ 
+    $("#fluidToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#dots").click(function(){ 
+    $("#dotsToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#regeneration").click(function(){ 
+    $("#regenerationToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#dongju").click(function(){ 
+    $("#dongjuToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#trace").click(function(){ 
+    $("#traceToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#echo").click(function(){ 
+    $("#echoToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
+  $("#sharp").click(function(){ 
+    $("#sharpToggle").toggle(1000);
+  });
+});
+</script>
+<style>
+  body{
+    background-color:black;
+    background-image:url(visual/particle02.jpeg);
+    background-attachment: fixed;
+    color:white;
+    margin-bottom: 50%;
+  }  
+  p{
+    text-align: center;
+    float: center;
+    font-size: 105%;
+  }
+  h1{
+    padding-left: 5%;
+    color:#FF3333AA;
+  }
+  h2{
+    text-align: center;
+    float: center;
+    font-size: 150%;
+  }
+  button {
+    width:150px;
+    background-color: #FF333333;
+    border: none;
+    color:#fff;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px;
+    cursor: pointer;
+  }
+  me {
+    color: red;
+    font-weight: bold;
+  }
+  arts {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .navi{
+    background:rgba(0, 0, 0, 0.5 );
+    margin-top:-15px;
+    width:100%;
+    height:60px;
+  }
+  .navi ul{
+    background:rgba(0, 0, 0, 0.5 );
+    height:40px;
+    padding-top:10px;
+    padding-bottom:5px;
+  }
+  .navi ul li {
+    background:rgba(0, 0, 0, 0.5 );
+    list-style-type:none;
+    display:inline;
+    float:left;
+    font-size:15px;
+  }
+
+
+  #main {
+    width: 100%;
+    float: center;
+  }
+  #main div.target {
+    
+  }
+  #main div.target:nth-child(even) {
+     
+  }
+  #nav {
+      width: 7%;
+      position: relative;
+  }
+  #nav nav {
+      width: 7%;
+      position: fixed;
+  }
+  #nav a {
+      border-bottom: 1px solid #666;
+      color: #333;
+      display: block;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+  }
+  #nav a:hover, #nav a.active {
+      background: #666;
+      color: #fff;
+  }
+</style>
+</head>
+<body>
+  <section id="main">
+        <div class="target" id="0"></div>
+  </section>
+	<div class="container">
+    <nav class="navi">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="videos.html">VIDEOS</a></li>
+        <li><a href="cont.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h1>VIDEOS</h1>
+  <br>
+
+  <aside id="nav">
+    <nav>
+        <a href="#0" class="scroll">TOP</a>
+        <a href="#1" class="scroll">Fluid</a>
+        <a href="#2" class="scroll">regeneration</a>
+        <a href="#3" class="scroll">Dots</a>
+        <a href="#4" class="scroll">Dongju</a>
+        <a href="#5" class="scroll">trace</a>
+        <a href="#6" class="scroll">An Echo</a>
+        <a href="#7" class="scroll">###</a>
+    </nav>
+  </aside>
+
+  <script type="text/javascript">
+    $('#nav nav a').on('click', function(event) {
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(window).on('scroll', function() {
+        $('.target').each(function() {
+            if($(window).scrollTop() >= $(this).offset().top-100) {
+                var id = $(this).attr('id');
+                $('#nav nav a').removeClass('active');
+                $('#nav nav a[href=#'+ id +']').addClass('active');
+            }
+        });
+    });
+  </script>
+
+
+    <section id="main">
+      <div class="target" id="1"></div>
+    </section>
+    <h2>
+      Fluid : a living planet
+    </h2>
+    <p>
+      Kinetic Installation, 2019
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://player.vimeo.com/video/348847683" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="fluid">Credit</button>
+      <br>
+      <p2 id="fluidToggle" style="display:none;">
+        Fluid : a living planet
+        <br>
+        Kinetic Installation, 2019
+        <br>
+        <br>
+        Rheoscopic Fluid, Acryl, Aluminum, Mortor, Speaker, Webcam, 1300 * 1500
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <strong><i>Director, Materials Research, Hardware</i></strong>
+        <br>
+        Kim Sungbaek
+        <br>
+        <br>
+        <strong><i>Physical Computing, Hardware</i></strong>
+        <br>
+        Choi Hyejeong
+        <br>
+        <br>
+        <strong><i>Interactive Sound Generation</i></strong>
+        <br>
+        <me>Kim Yuhwa</me>
+        <br>
+        <br>
+        <strong><i>Sound Design</i></strong>
+        <br>
+        Park Jaeho
+        <br>
+        <br>
+        <strong><i>Sound Engineer</i></strong>
+        <br>
+        Kwon Hyukbin
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="2"></div>
+    </section>
+    <h2>
+      regeneration
+    </h2>
+    <p>
+      Visualization of regeneration, 2019
+      <br>
+      <br>
+       <a href="regeneration/index.html"><img src="visual/regeneration.png" alt="regeneration" width="80%" height="480"></a>
+
+      <br>
+      <button id="regeneration">Credit</button>
+      <br>
+      <p2 id="regenerationToggle" style="display:none;">
+        regeneration
+        <br>
+        Visualization of regeneration, 2019
+        <br>
+        <br>
+        Interactive Webpage
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <me>Kim Yuhwa</me>
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="3"></div>
+    </section>
+    <h2>
+      Dots : Pixel Mickey Mousing
+    </h2>
+    <p>
+      Audio from Visual, 2019
+      <br>
+      <br>
+      <iframe width="40%" height="480" src="https://www.youtube.com/embed/INR7GamvhBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="40%" height="480" src="https://www.youtube.com/embed/YIFCFctw8LA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="dots">Credit</button>
+      <br>
+      <p2 id="dotsToggle" style="display:none;">
+        Dots : Pixel Mickey Mousing
+        <br>
+        Audio from Visual, 2019
+        <br>
+        <br>
+        Mickey Mousing Audio Generation from Pixel
+        <br>
+        Visual : Norman McLaren - Dots, 1940
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <me>Kim Yuhwa</me>
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="4"></div>
+    </section>
+    <h2>
+      Dongju : An Eternal Moment
+    </h2>
+    <p>
+      Theatre, 2019
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/BwszcUkgrZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="dongju">Credit</button>
+      <br>
+      <p2 id="dongjuToggle" style="display:none;">
+        Dongju : An Eternal Moment
+        <br>
+        Theatre, 2019
+        <br>
+        <br>
+        Real-time motion capture, Generative Audio Visual Interaction on Play
+        <br>
+        <br>
+        Selection of Support Project - Performing arts utilizing the fusion stage technology Art & Technology
+        <br>
+        Host & Support by ARKO (Arts Council Korea), Hanyang University Industry-University Cooperation Foundation
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <strong><i>Created by</i></strong>
+        <br>
+        Theater - Seoul Factory
+        <br>
+        Poet - Yoon Dongju
+        <br>
+        Writer - Yoo Hyunsuh
+        <br>
+        General Director - Lim Hyeongtaek
+        <br>
+        Co-Director - Son Eujin
+        <br>
+        Music Director - Yoon Kyungro
+        <br>
+        Choreographer - Kim Soi
+        <br>
+        Costume Director - Jang Hyesook
+        <br>
+        Lighting Director - Park Sunghee
+        <br>
+        Video Shooting, Editing - Kim Min (DURIMEDIA)
+        <br>
+        Sound Advisory - An Chanyong
+        <br>
+        Assistant Director - Cho Seyeon, Park Jinsung
+        <br>
+        Photographer - Jung Jiwon
+        <br>
+        Stage Director Assistant - Nam Yumin
+        <br>
+        Lighting Director Assistant - Moon Younghyun
+        <br>
+        Lighting Programmer - Moon Dongmin
+        <br>
+        Lighting Team Leader - Han Jongyup
+        <br>
+        Lighting Team - Park Jisun
+        <br>
+        Sound Acting - Kim Jihyun
+        <br>
+        Graphic Design - Lee Taekhee, Ko Jungmin, Park Youngju
+        <br>
+        Planning Team Leader - Park Jaeyeon
+        <br>
+        Public Relations Team Leader - Kwon Mikang
+        <br>
+        Public Relations Team - Lee Sooyeon, Yoon Chaeyeon, Baek Yujin, Kim Jungho
+        <br>
+        Planning Advisory - Park Sohyun, Kim Byungae
+        <br>
+        <br>
+        <strong><i>Acting by</i></strong>
+        <br>
+        Yoon Dongju - Chu Heonyup
+        <br>
+        Woman in a well - Lee Sun
+        <br>
+        Adult Children 1 - Kim Chunggeun
+        <br>
+        Adult Children 2 - Lee Misook
+        <br>
+        Children 1 - Gu Jungeun
+        <br>
+        Children 2 - Kim Dana
+        <br>
+        Children 3 - Kim Yeeun
+        <br>
+        Guitar - Yoon Kyungro
+        <br>
+        Piano - Lee Sungyoung
+        <br>
+        <br>
+        <strong><i>Interaction Technology Creation by</i></strong>
+        <br>
+        Interactive Technical Advisory - Kim Hodong
+        <br>
+        <me>Interactive Technical Director - Kim Yuhwa</me>
+        <br>
+        Interactive Technical Director Assistant - Lee Hobin, Heo Jungho
+        <br>
+        Video System Director - Lee Hyunwoo
+        <br>
+        Video System Director Assistant - Lee Jongho
+        <br>
+        3D Designer - Choi Junhong
+        <br>
+        3D Designer Assistant - Im Kyuhee, Kim Minkyung
+        <br>
+        2D Designer - Jung Hyunhee
+        <br>
+        Sound designer - Kwon Hyukbin
+
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="5"></div>
+    </section>
+    <h2>
+      Trace
+    </h2>
+    <p>
+      Generative Audio Visual Art, 2018
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/xA5DVFgyGSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="trace">Credit</button>
+      <br>
+      <p2 id="traceToggle" style="display:none;">
+        Trace
+        <br>
+        Generative Audio Visual Art, 2018
+        <br>
+        <br>
+        Interactive Projection
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <me>Kim Yuhwa</me>
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="6"></div>
+    </section>
+    <h2>
+      An Echo: Sound seen through Heart
+    </h2>
+    <p>
+      Modern dance, 2018
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/J_DWYjuLLUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <br>
+      <button id="echo">Credit</button>
+      <br>
+      <p2 id="echoToggle" style="display:none;">
+        An Echo: Sound seen through Heart
+        <br>
+        Modern dance, 2018
+        <br>
+        <br>
+        Sound interaction with objets
+        <br>
+        <br>
+        KIADA, 3th Korea International Accessible Dance Festival
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <strong><i>Choreography</i></strong>
+        <br>
+        Jeon Eunsun
+        <br>
+        <br>
+        <strong><i>Performer</i></strong>
+        <br>
+        Kim Yeonsook : Visual Impairment
+        <br>
+        Noh Dongjoo : Visual Impairment
+        <br>
+        Noh Byeongryul : Visual Impairment
+        <br>
+        Song Sanghoon : Visual Impairment
+        <br>
+        Jeon Sebin : Visual Impairment
+        <br>
+        Jo Minji : Visual Impairment
+        <br>
+        Ou Jaewon : Visual Impairment
+        <br>
+        Do Haryeon
+        <br>
+        Park Sanghyo
+        <br>
+        Shin Jimin
+        <br>
+        <br>
+        <strong><i>Music, Interaction Director</i></strong>
+        <br>
+        Jo Sunghyun
+        <br>
+        <br>
+        <strong><i>Music, Interaction Team</i></strong>
+        <br>
+        <me>Kim Yuhwa</me>, Huh Jungho
+        <br>
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <section id="main">
+      <div class="target" id="7"></div>
+    </section>
+    <h2>
+      ###
+    </h2>
+    <p>
+      Media Perfomance Showcase, 2018
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/mWTDEIT5mYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <br>
+      <button id="sharp">Credit</button>
+      <br>
+      <p2 id="sharpToggle" style="display:none;">
+        ###
+        <br>
+        Media Perfomance Showcase, 2018
+        <br>
+        <br>
+        Audio reaction LED, Interactive Webpage with Realtime Projection, Generative Visual
+        <br>
+        <br>
+        <arts>Artists</arts>
+        <br>
+        <br>
+        <strong><i>General Director</strong></i>
+        <br>
+        Kim Soomin
+        <br>
+        <br>
+        <strong><i>Choreography</i></strong>
+        <br>
+        Park Raeyoung
+        <br>
+        <br>
+        <strong><i>Performer</i></strong>
+        <br>
+        Han Seokhee
+        <br>
+        <br>
+        <strong><i>Interaction Designer</i></strong>
+        <br>
+        <me>Kim Yuhwa</me>
+        <br>
+        <br>
+        <strong><i>Projection Mapping, Interaction Designer Assistant</i></strong>
+        <br>
+        Kim Junwoo
+        <br>
+        <br>
+        <strong><i>2D Designer</i></strong>
+        <br>
+        Kwon Youngmin
+
+      </p2>
+    </p>
+
+    <br>
+    <br>
+    <br>
+</body>
+</html>
