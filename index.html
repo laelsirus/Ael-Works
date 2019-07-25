@@ -6,13 +6,46 @@
 <link href="css/style.css?Version=1.0" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("#ButtonIntro").click(function(){ 
-    $("#Intro").toggle(3000); 
-  });
-});
-</script>
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
 
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            return;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+</script>
 <style>
   body{
     background-color:black;
@@ -65,42 +98,37 @@ $(document).ready(function(){
 		font-size:15px;
 	}
 
-  /** { box-sizing: border-box; }*/
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-#vidtop-content {
-  top: 0;
-  color: #fff;
-}
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
-}
+  #fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: black;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+  }
+  #fader:before {
+    content: 'fade'
+  }
+  @keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+  }
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  #fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+  }
+  #fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+  }
 </style>
 <style type="text/css">
   video #bgvid {
@@ -122,27 +150,25 @@ $(document).ready(function(){
 </style>
 </head>
 <body>
-  <!-- <div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/33ivSb0avPc?mute=1&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=33ivSb0avPc" muted autoplay frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div> -->
 	<div class="container">
     <nav class="navi">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="videos.html">VIDEOS</a></li>
-        <li><a href="cont.html">CONTACT</a></li>
+        <li>
+          <svg id="fader"></svg>
+          <script>fadeInPage()</script>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="videos.html">VIDEOS</a>
+        </li>
+        <li>
+          <a href="cont.html">CONTACT</a>
+        </li>
       </ul>
     </nav>
   </div>
   <h1>HOME</h1>
   <br>
-<!--   <p>
-  <button id="ButtonIntro">Introduce</button>
-  </p>
-  <br>
-  <p2 id="Intro" style="display:none;"> -->
   <p>
     Yuhwa
     <br>
