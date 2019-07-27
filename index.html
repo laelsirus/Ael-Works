@@ -15,7 +15,7 @@
       document.addEventListener('DOMContentLoaded', function() {
         if (!window.AnimationEvent) { return }
 
-        var anchors = document.getElementsByTagName('a');
+        var anchors = document.getElementsByTagName('EDITING');
 
         for (var idx=0; idx<anchors.length; idx+=1) {
           if (anchors[idx].hostname !== window.location.hostname) {
@@ -107,7 +107,7 @@
     z-index: 999999;
     pointer-events: none;
     background: black;
-    animation-duration: 300ms;
+    animation-duration: 500ms;
     animation-timing-function: ease-in-out;
   }
   #fader:before {
@@ -141,7 +141,7 @@
     height: auto;
     z-index: -100;
     overflow: hidden;
-    background: url(visual/particle01.png) no-repeat center center fixed;
+    background: url(visual/particle01.png);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
