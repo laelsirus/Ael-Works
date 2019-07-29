@@ -7,8 +7,8 @@ var nsOptions1 =
     autoAdvance: false,
     rewind: true,
     delay: "default",
-    transitionSpeed: 2000,
-    aspectRatio: "2:1", // "?:100%" is for responsive scaling based on window height
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
@@ -26,8 +26,8 @@ var nsOptions2 =
     autoAdvance: false,
     rewind: true,
     delay: "default",
-    transitionSpeed: 2000,
-    aspectRatio: "2:1", // "?:100%" is for responsive scaling based on window height
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
@@ -45,8 +45,8 @@ var nsOptions3 =
     autoAdvance: false,
     rewind: true,
     delay: "default",
-    transitionSpeed: 2000,
-    aspectRatio: "2:1", // "?:100%" is for responsive scaling based on window height
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
@@ -64,8 +64,8 @@ var nsOptions4 =
     autoAdvance: false,
     rewind: true,
     delay: "default",
-    transitionSpeed: 2000,
-    aspectRatio: "2:1", // "?:100%" is for responsive scaling based on window height
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
