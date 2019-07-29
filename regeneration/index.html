@@ -19,7 +19,7 @@
       document.addEventListener('DOMContentLoaded', function() {
         if (!window.AnimationEvent) { return }
 
-        var anchors = document.getElementsByTagName('EDITING');
+        var anchors = document.getElementsByTagName('fader');
 
         for (var idx=0; idx<anchors.length; idx+=1) {
           if (anchors[idx].hostname !== window.location.hostname) {
@@ -64,7 +64,7 @@ body {
     z-index: 999999;
     pointer-events: none;
     background: black;
-    animation-duration: 500ms;
+    animation-duration: 3000ms;
     animation-timing-function: ease-in-out;
   }
   #fader:before {
