@@ -107,7 +107,7 @@
 
 /*---------- Captions -------------------*/
 #ninja-slider1 .caption {
-    padding:1px 40px;
+    padding:1px 10px;
     margin:auto;
     left:0;right:0;
     top:1%;bottom:auto;
@@ -191,10 +191,11 @@
     user-select:none;
     border-radius:3px; 
     z-index:10;
-    opacity:0.2;
+    opacity:0.5;
     cursor:pointer;
     font-family:sans-serif;
     font-size:11px;
+    line-height: 200%;
     cursor:pointer;
     -webkit-transition:all 0.7s;
     transition:all 0.7s;
@@ -255,7 +256,7 @@
 /* #ninja-slider1-pager { display:none;}*/
 #ninja-slider1-pager
 {
-    padding-top:30px; /* set the distance away from the slider */
+    padding-top:15px; /* set the distance away from the slider */
     margin:0 auto; /* center align */
     text-align:center;
     display:table;
@@ -428,7 +429,7 @@
 
 /*---------- Captions -------------------*/
 #ninja-slider2 .caption {
-    padding:1px 40px;
+    padding:1px 10px;
     margin:auto;
     left:0;right:0;
     top:1%;bottom:auto;
@@ -512,10 +513,11 @@
     user-select:none;
     border-radius:3px; 
     z-index:10;
-    opacity:0.2;
+    opacity:0.5;
     cursor:pointer;
     font-family:sans-serif;
     font-size:11px;
+    line-height: 200%;
     cursor:pointer;
     -webkit-transition:all 0.7s;
     transition:all 0.7s;
@@ -576,7 +578,7 @@
 /* #ninja-slider2-pager { display:none;}*/
 #ninja-slider2-pager
 {
-    padding-top:30px; /* set the distance away from the slider */
+    padding-top:15px; /* set the distance away from the slider */
     margin:0 auto; /* center align */
     text-align:center;
     display:table;
@@ -746,7 +748,7 @@
 
 /*---------- Captions -------------------*/
 #ninja-slider3 .caption {
-    padding:1px 40px;
+    padding:1px 10px;
     margin:auto;
     left:0;right:0;
     top:1%;bottom:auto;
@@ -830,10 +832,11 @@
     user-select:none;
     border-radius:3px; 
     z-index:10;
-    opacity:0.2;
+    opacity:0.5;
     cursor:pointer;
     font-family:sans-serif;
     font-size:11px;
+    line-height: 200%;
     cursor:pointer;
     -webkit-transition:all 0.7s;
     transition:all 0.7s;
@@ -894,7 +897,7 @@
 /* #ninja-slider3-pager { display:none;}*/
 #ninja-slider3-pager
 {
-    padding-top:30px; /* set the distance away from the slider */
+    padding-top:15px; /* set the distance away from the slider */
     margin:0 auto; /* center align */
     text-align:center;
     display:table;
@@ -1064,7 +1067,7 @@
 
 /*---------- Captions -------------------*/
 #ninja-slider4 .caption {
-    padding:1px 40px;
+    padding:1px 10px;
     margin:auto;
     left:0;right:0;
     top:1%;bottom:auto;
@@ -1148,10 +1151,11 @@
     user-select:none;
     border-radius:3px; 
     z-index:10;
-    opacity:0.2;
+    opacity:0.5;
     cursor:pointer;
     font-family:sans-serif;
     font-size:11px;
+    line-height: 200%;
     cursor:pointer;
     -webkit-transition:all 0.7s;
     transition:all 0.7s;
@@ -1212,7 +1216,7 @@
 /* #ninja-slider4-pager { display:none;}*/
 #ninja-slider4-pager
 {
-    padding-top:30px; /* set the distance away from the slider */
+    padding-top:15px; /* set the distance away from the slider */
     margin:0 auto; /* center align */
     text-align:center;
     display:table;
