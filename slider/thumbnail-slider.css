@@ -3,7 +3,7 @@
     -webkit-transform: scale(0.7);
     transform:scale(0.7);
     transition:transform 0.25s;
-    opacity:0.8;
+    opacity:0.95;
 
     margin:4px auto; /*center-aligned*/
     width:100%;
@@ -72,7 +72,7 @@
 }
 
 #thumbnail-slider1 ul li.active {
-    border-color:white;
+    border-color:#ff333377;
 }
 
 #thumbnail-slider1 li:hover {
@@ -180,7 +180,7 @@
     -webkit-transform: scale(0.7);
     transform:scale(0.7);
     transition:transform 0.25s;
-    opacity:0.8;
+    opacity:0.95;
 
     margin:4px auto; /*center-aligned*/
     width:100%;
@@ -249,7 +249,7 @@
 }
 
 #thumbnail-slider2 ul li.active {
-    border-color:white;
+    border-color:#ff333377;
 }
 
 #thumbnail-slider2 li:hover {
@@ -356,7 +356,7 @@
     -webkit-transform: scale(0.7);
     transform:scale(0.7);
     transition:transform 0.25s;
-    opacity:0.8;
+    opacity:0.95;
 
     margin:4px auto; /*center-aligned*/
     width:100%;
@@ -425,7 +425,7 @@
 }
 
 #thumbnail-slider3 ul li.active {
-    border-color:white;
+    border-color:#ff333377;
 }
 
 #thumbnail-slider3 li:hover {
@@ -532,7 +532,7 @@
     -webkit-transform: scale(0.7);
     transform:scale(0.7);
     transition:transform 0.25s;
-    opacity:0.8;
+    opacity:0.95;
 
     margin:4px auto; /*center-aligned*/
     width:100%;
@@ -601,7 +601,7 @@
 }
 
 #thumbnail-slider4 ul li.active {
-    border-color:white;
+    border-color:#ff333377;
 }
 
 #thumbnail-slider4 li:hover {
