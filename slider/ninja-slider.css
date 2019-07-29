@@ -54,11 +54,12 @@
 
 #ninja-slider1.fullscreen .slider-inner {
     width:100%;
-    max-width:1920px;
+    max-width:100%;
 }
 
 #ninja-slider1.fullscreen .video {
-    max-width: 1920px;
+    width:100%;
+    max-width: 100%;
     line-height: 1080px;
 }
 
@@ -381,11 +382,12 @@
 
 #ninja-slider2.fullscreen .slider-inner {
     width:100%;
-    max-width:1920px;
+    max-width:100%;
 }
 
 #ninja-slider2.fullscreen .video {
-    max-width: 1920px;
+    width:100%;
+    max-width: 100%;
     line-height: 1080px;
 }
 
@@ -705,11 +707,12 @@
 
 #ninja-slider3.fullscreen .slider-inner {
     width:100%;
-    max-width:1920px;
+    max-width:100%;
 }
 
 #ninja-slider3.fullscreen .video {
-    max-width: 1920px;
+    width:100%;
+    max-width: 100%;
     line-height: 1080px;
 }
 
@@ -1029,11 +1032,12 @@
 
 #ninja-slider4.fullscreen .slider-inner {
     width:100%;
-    max-width:1920px;
+    max-width:100%;
 }
 
 #ninja-slider4.fullscreen .video {
-    max-width: 1920px;
+    width:100%;
+    max-width: 100%;
     line-height: 1080px;
 }
 
