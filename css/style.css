@@ -34,7 +34,8 @@ a, a:hover, a:active, a:focus {
 .navi ul li {
 	display:inline;
 	float:left;
-	font-size:15px;
+	margin : 0 auto;
+	font-size:110%;
 }
 .navi a, .navi a:visited {
 	padding: 10px 25px 10px 10px;
