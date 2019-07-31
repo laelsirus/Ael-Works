@@ -100,6 +100,7 @@ $(document).ready(function(){
     background-color:black;
     background-image:url(img/particle02.png);
     background-attachment: fixed;
+    background-size: cover;
     color:white;
     margin-left: 9%;
     margin-right: 9%;
@@ -107,6 +108,7 @@ $(document).ready(function(){
   section{
     background-color: rgba(255,255,255,0.07);
     padding: 5% 0 5% 0;
+    box-shadow: inset 0 0 5px 0px black
   }
   p{
     text-align: center;
@@ -152,6 +154,26 @@ $(document).ready(function(){
     font-size: 130%;
     font-weight: bold;
     text-decoration: underline;
+  }
+  article {
+    background-color: rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    text-align: center;
+    padding: 0% 5% 0% 5%;
+  }
+  description{
+    text-align: left;
+    float: left;
+    padding: 3% 0% 3% 0%;
+  }
+  descriptionTitle{
+    font-weight: bolder;
+    font-size: 150%;
+  }
+  descriptionHead{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 110%;
   }
 
   #main {
@@ -385,6 +407,7 @@ $(document).ready(function(){
       <br>
       <button id="fluid">ABOUT THIS WORK</button>
       <br>
+      <article>
       <p2 id="fluidToggle" style="display:none;">
         <br>
         <stitle>
@@ -425,6 +448,52 @@ $(document).ready(function(){
         <strong><i>Sound Engineer</i></strong>
         <br>
         Kwon Hyukbin
+        <br>
+        <br>
+        <description>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+&ensp;'Fluid : A living planet'은 이름 그대로 액체로 제작된 살아있는 행성이다.<br>
+이 행성은 오직 열과 회전 두 개의 힘만을 가지지만 표면에는 창발적인 패턴들이 나타며 이 패턴은 행성이 만들어내는 소리의 근원이 된다.<br>
+주위에선 함께 공전하며 다가오는 행성들의 소리가 행성의 것과 조화를 이루며 연주된다.<br><br>
+&ensp;우리는 실제 행성이 가진 생명력에 집중한다.<br>
+행성이 끊임없이 만드는 복잡한 현상들은 의지를 가진 듯 창발적이며 유의미하다.<br>
+이것은 기본적으로 인간에게 감각될 수 없으나 'Fluid : A living planet'은 인간이 이를 직접 감각할 수 있는 행성이다.
+물리적인 틀에 인위적으로 생명력을 부여받은 행성을 통해 관객으로 하여금 행성이 가진 생명력을 감각하고 실제 천체에도 같은 맥락의 관점을 확장시키는 데 목적이 있다.<br><br>
+&ensp;'Fluid : A living planet'에서 사운드는 두 가지로 나뉜다.<br>
+작품에서 시각적으로 존재하는 메 인 행성과, 그것이 속해있는 가상 항성계의 사운드이다.<br>
+메인 행성의 사운드는 행성 스스로 만들 어 내는 데이터를 사운드로 변환하여, 행성이 스스로 소리 내는 구조를 갖는 것에 목표를 둔다.<br>
+메인 행성이 속해 있는 공간을 사운드로 디자인하기 위해 항성계의 개념을 추가한다.<br>
+사운드에 항성계의 개념이 들어감으로서 단순히 메인 행성 배경 공간음의 역할을 넘어, 항성계를 구성하는 객체들의 움직임이 반영된 Sound Scape 를 구상하였다.<br><br><br>
+<descriptionHead>&emsp; 가상 항성계의 Sound</descriptionHead><br><br>
+&ensp;소리는 발생되는 음원 (Sound Source) 이 필요하고, 청취자와 음원 사이의 벡터가 청취자가 감각하는 소리의 최종 결과물을 결정한다.<br>
+마찬가지로 항성계의 사운드 디자인을 하기 위해 청취자와 음원 사이의 벡터가 결정되어야 한다.<br>
+청취자(관객)은 작품에서 메인 행성에 위치 할 것이고, 항성계를 구성하는 각각의 행성들은 음원이 된다.<br>
+즉, 가상 항성계의 모델을 만 들고, 공전하는 항성계를 구성하는 각 객체들과 메인 행성 객체 사이의 관계가 연산이 되어야 항성계 사운드디자인을 위한 청취자와 음원 사이 벡터가 결정된다.<br>
+각 행성의 공전각속도, 자전 각속도, 항성과의 거리, 크기, 색을 지정 가능한 가상 항성계 모델을 max 의 OpenGL 을 활용하여 제작하였다.<br>
+신뢰성 있는 행성들의 움직임을 위해 각 행성들의 공전 속도의 모델이 필요하였는데, 우리와 가장 가까운 태양계를 참조하였다.<br>
+태양계 구성 행성들의 공전 주기를 각속도로 변환하여 가상 항성계의 데이터로 사용하였다.<br>
+실제 공전 주기는 지구를 기준으로 내행성과 외행성의 각속도가 극명히 차이가 난다.<br>
+사운드디자인을 위해 어느정도 스케일 과정을 거쳐 각속도 차이를 줄인 다음 가상 항성계에 반영하였다.<br>
+메인 행성 중심의 공전 궤도 데이터를 8채널 사운드 출력으로 변환을 하기 위해 행성 하나 당 8개의 Output 을 가진 Panning 구조가 필요하다.<br>
+각 행성들의 위치를 메인 행성과 이루는 각도로 변환하고, 45도 씩 나누어 8개의 사운드 출력 지점으로 나누었다.<br>
+행성들이 가지는 개별적인 각도가 사운드 출력 지점 각도와의 차에 따라 행성의 8채널 사운드 Gain 의 값을 linear 하게 결정하는 구조로 항성계의 Panning 을 구현 하였다.<br>
+메인 행성과 행성들의 거리 차에 따른 Gain 변화와 움직임에 따른 Doppler 의 구조를 추가 하였다.<br>
+메인 행성을 중심으로 움직이는 9개의 객체는 메인 행성과의 거리가 계속 변화하고 각각의 거리의 차이가 크게 다르다.<br>
+거리의 차이는 행성의 Gain 과 직결되는데, 메인 행성과 객체들의 거리 차를 각 객체의 전체 Gain 에 그대로 반영하면, 결국 가까이 있는 행성들의 소리만 들을 수 있게 된다.<br>
+이를 해결하기 위해 메인행성과 행성거리 차의 최대/최소값을 지속 학습 해두고 그 값을 -20db ~ 0db 로 스케일 하여 각 행성의 전체 Gain 에 반영하였다.
+행성의 속성은 최종 전시 전까지 유동적으로 수정하기 위하여 최대/최소값의 지정이 아닌 학습으로 설계하였다.<br>
+Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화의 스케 일 기준 값으로 사용하였다.<br>
+8채널 출력장치가 없는 환경에서 모니터링을 위해 8채널을 2채널로 전환시키는 스위치, 개별적인 Mute 기능, 각 채널 별 Pink Noise 모니터링 구조를 추가하였다.<br>
+최종적으로 9개의 객체(8개의 행성과 1개의 항성) 에서 출력되는 8채널의 Output 이 Master 에서 믹스되어 출력된다.<br><br><br>
+<descriptionHead>&emsp; 메인 행성의 사운드</descriptionHead><br><br>
+&ensp;메인 행성의 사운드는 웹캠으로 입력되는 행성 표면의 이미지를 사운드로 변환하였다.<br>
+행성이 만들어 내는 흐름을 웹캠으로 받아 흐름의 밀집도, 속도 등의 속성을 사운드 인터렉션 의 input 으로 받는 것에 구현 목적을 두었다.<br>
+OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집도가 특정 Threshold 에 따라 컬러가 변화하는 구조를 가졌다.<br>
+프로세스를 거친 이미지를 프레임마다 전체 픽셀 정보의 연산을 통해 사운드의 파형 변화를 주었다.<br>
+메인행성의 최종사운드 아웃풋은 가상 항성계 패치로 전달, 사운드 시그널을 통합 관리 하였다.<br>
+가상 항성계 사운드와 충돌하지 않게 300 Hz 이하의 주파수 대역 중심으로 출력 되었고, 최종 전시에서는 행성 프레임과의 공진을 통해 진동으로도 메인 행성의 사운드를 감각 할 수 있도록 디자인 되었다.
+</description>
+</article>
       </p2>
     </p>
     </section>
@@ -449,6 +518,7 @@ $(document).ready(function(){
       <br>
       <button id="regeneration">ABOUT THIS WORK</button>
       <br>
+      <article>
       <p2 id="regenerationToggle" style="display:none;">
         <br>
         <stitle>
@@ -465,6 +535,15 @@ $(document).ready(function(){
         <br>
         <br>
         <me>Kim Yuhwa</me>
+        <br>
+        <br>
+        <description>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+&ensp;단순한 움직임을 가진 객체들이 모여 세포 재생, 손상, 결합 과정의 추상적 시각화를 목적에 두었다<br>
+감염과 회복의 개념의 교차되며 각 객체들이 남긴 흔적은 나이테가 된다.<br>
+상처받고 아물고 흉터가 생기고 성장한다.
+        </description>
+        </article>
       </p2>
     </p>
     </section>
