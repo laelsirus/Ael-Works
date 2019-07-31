@@ -15,7 +15,7 @@ var nsOptions1 =
     navigateByTap: false,
     pauseOnHover: false,
     keyboardNav: true,
-    before: null,
+    n: false,
     before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider1 != "undefined") mcThumbnailSlider1.display(nextIdx); },
     license: "mylicense"
 };
@@ -35,7 +35,7 @@ var nsOptions2 =
     navigateByTap: false,
     pauseOnHover: false,
     keyboardNav: true,
-    before: null,
+    n: false,
     before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider2 != "undefined") mcThumbnailSlider2.display(nextIdx); },
     license: "mylicense"
 };
@@ -55,7 +55,7 @@ var nsOptions3 =
     navigateByTap: false,
     pauseOnHover: false,
     keyboardNav: true,
-    before: null,
+    n: false,
     before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider3 != "undefined") mcThumbnailSlider3.display(nextIdx); },
     license: "mylicense"
 };
@@ -75,7 +75,7 @@ var nsOptions4 =
     navigateByTap: false,
     pauseOnHover: false,
     keyboardNav: true,
-    before: null,
+    n: false,
     before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider4 != "undefined") mcThumbnailSlider4.display(nextIdx); },
     license: "mylicense"
 };
