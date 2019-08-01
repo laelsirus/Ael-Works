@@ -412,7 +412,9 @@ $(document).ready(function(){
         <stitle>
         Fluid : a living planet
         <br>
-        Kinetic Installation, 2019
+        Kinetic Installation
+        <br>
+        06.15 ~ 06.16, 2019
         </stitle>
         <br>
         <br>
@@ -468,28 +470,28 @@ $(document).ready(function(){
 메인 행성의 사운드는 행성 스스로 만들 어 내는 데이터를 사운드로 변환하여, 행성이 스스로 소리 내는 구조를 갖는 것에 목표를 둔다.<br>
 메인 행성이 속해 있는 공간을 사운드로 디자인하기 위해 항성계의 개념을 추가한다.<br>
 사운드에 항성계의 개념이 들어감으로서 단순히 메인 행성 배경 공간음의 역할을 넘어, 항성계를 구성하는 객체들의 움직임이 반영된 Sound Scape 를 구상하였다.<br><br><br>
-<descriptionHead>&emsp; 가상 항성계의 Sound</descriptionHead><br><br>
+<descriptionHead>&emsp; 가상 항성계 Sound</descriptionHead><br>
 &ensp;소리는 발생되는 음원 (Sound Source) 이 필요하고, 청취자와 음원 사이의 벡터가 청취자가 감각하는 소리의 최종 결과물을 결정한다.<br>
 마찬가지로 항성계의 사운드 디자인을 하기 위해 청취자와 음원 사이의 벡터가 결정되어야 한다.<br>
 청취자(관객)은 작품에서 메인 행성에 위치 할 것이고, 항성계를 구성하는 각각의 행성들은 음원이 된다.<br>
-즉, 가상 항성계의 모델을 만 들고, 공전하는 항성계를 구성하는 각 객체들과 메인 행성 객체 사이의 관계가 연산이 되어야 항성계 사운드디자인을 위한 청취자와 음원 사이 벡터가 결정된다.<br>
-각 행성의 공전각속도, 자전 각속도, 항성과의 거리, 크기, 색을 지정 가능한 가상 항성계 모델을 max 의 OpenGL 을 활용하여 제작하였다.<br>
+즉, 가상 항성계의 모델을 만 들고, 공전하는 항성계를 구성하는 각 객체들과 메인 행성 객체 사이의 관계가 연산이 되어야 항성계 사운드디자인을 위한 청취자와 음원 사이 벡터가 결정된다.<br><br>
+&ensp;각 행성의 공전각속도, 자전 각속도, 항성과의 거리, 크기, 색을 지정 가능한 가상 항성계 모델을 OpenGL 을 활용하여 제작하였다.<br>
 신뢰성 있는 행성들의 움직임을 위해 각 행성들의 공전 속도의 모델이 필요하였는데, 우리와 가장 가까운 태양계를 참조하였다.<br>
 태양계 구성 행성들의 공전 주기를 각속도로 변환하여 가상 항성계의 데이터로 사용하였다.<br>
 실제 공전 주기는 지구를 기준으로 내행성과 외행성의 각속도가 극명히 차이가 난다.<br>
-사운드디자인을 위해 어느정도 스케일 과정을 거쳐 각속도 차이를 줄인 다음 가상 항성계에 반영하였다.<br>
-메인 행성 중심의 공전 궤도 데이터를 8채널 사운드 출력으로 변환을 하기 위해 행성 하나 당 8개의 Output 을 가진 Panning 구조가 필요하다.<br>
+사운드디자인을 위해 어느정도 스케일 과정을 거쳐 각속도 차이를 줄인 다음 가상 항성계에 반영하였다.<br><br>
+&ensp;메인 행성 중심의 공전 궤도 데이터를 8채널 사운드 출력으로 변환을 하기 위해 행성 하나 당 8개의 Output 을 가진 Panning 구조가 필요하다.<br>
 각 행성들의 위치를 메인 행성과 이루는 각도로 변환하고, 45도 씩 나누어 8개의 사운드 출력 지점으로 나누었다.<br>
-행성들이 가지는 개별적인 각도가 사운드 출력 지점 각도와의 차에 따라 행성의 8채널 사운드 Gain 의 값을 linear 하게 결정하는 구조로 항성계의 Panning 을 구현 하였다.<br>
-메인 행성과 행성들의 거리 차에 따른 Gain 변화와 움직임에 따른 Doppler 의 구조를 추가 하였다.<br>
+행성들이 가지는 개별적인 각도가 사운드 출력 지점 각도와의 차에 따라 행성의 8채널 사운드 Gain 의 값을 linear 하게 결정하는 구조로 항성계의 Panning 을 구현 하였다.<br><br>
+&ensp;메인 행성과 행성들의 거리 차에 따른 Gain 변화와 움직임에 따른 Doppler 의 구조를 추가 하였다.<br>
 메인 행성을 중심으로 움직이는 9개의 객체는 메인 행성과의 거리가 계속 변화하고 각각의 거리의 차이가 크게 다르다.<br>
 거리의 차이는 행성의 Gain 과 직결되는데, 메인 행성과 객체들의 거리 차를 각 객체의 전체 Gain 에 그대로 반영하면, 결국 가까이 있는 행성들의 소리만 들을 수 있게 된다.<br>
 이를 해결하기 위해 메인행성과 행성거리 차의 최대/최소값을 지속 학습 해두고 그 값을 -20db ~ 0db 로 스케일 하여 각 행성의 전체 Gain 에 반영하였다.
 행성의 속성은 최종 전시 전까지 유동적으로 수정하기 위하여 최대/최소값의 지정이 아닌 학습으로 설계하였다.<br>
-Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화의 스케 일 기준 값으로 사용하였다.<br>
-8채널 출력장치가 없는 환경에서 모니터링을 위해 8채널을 2채널로 전환시키는 스위치, 개별적인 Mute 기능, 각 채널 별 Pink Noise 모니터링 구조를 추가하였다.<br>
+Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화의 스케 일 기준 값으로 사용하였다.<br><br>
+&ensp;8채널 출력장치가 없는 환경에서 모니터링을 위해 8채널을 2채널로 전환시키는 스위치, 개별적인 Mute 기능, 각 채널 별 Pink Noise 모니터링 구조를 추가하였다.<br>
 최종적으로 9개의 객체(8개의 행성과 1개의 항성) 에서 출력되는 8채널의 Output 이 Master 에서 믹스되어 출력된다.<br><br><br>
-<descriptionHead>&emsp; 메인 행성의 사운드</descriptionHead><br><br>
+<descriptionHead>&emsp; 메인 행성 Sound</descriptionHead><br>
 &ensp;메인 행성의 사운드는 웹캠으로 입력되는 행성 표면의 이미지를 사운드로 변환하였다.<br>
 행성이 만들어 내는 흐름을 웹캠으로 받아 흐름의 밀집도, 속도 등의 속성을 사운드 인터렉션 의 input 으로 받는 것에 구현 목적을 두었다.<br>
 OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집도가 특정 Threshold 에 따라 컬러가 변화하는 구조를 가졌다.<br>
@@ -512,7 +514,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
       regeneration
     </h2>
     <p>
-      Visualization of regeneration, 2019
+      Visualization of regeneration
+      <br>
+      06,2019
       <br>
       <br>
        <a href="regeneration/index.html"><img src="img//regeneration/regeneration.png" alt="regeneration" width="80%" height="480"></a>
@@ -528,7 +532,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         regeneration
         <br>
-        Visualization of regeneration, 2019
+        Visualization of regeneration
+        <br>
+        06, 2019
         </stitle>
         <br>
         <br>
@@ -581,7 +587,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         Dots : Pixel Mickey Mousing
         <br>
-        Audio from Visual, 2019
+        Audio from Visual
+        <br>
+        06, 2019
         </stitle>
         <br>
         <br>
@@ -690,7 +698,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         Dongju : An Eternal Moment
         <br>
-        Theatre, 2019
+        Theatre
+        <br>
+        01.26 ~ 02.03, 2019
         </stitle>
         <br>
         <br>
@@ -800,7 +810,21 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         2D Designer - Jung Hyunhee
         <br>
         Sound designer - Kwon Hyukbin
+        <br>
+        <br>
         <description>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+&ensp;시인 윤동주와 시인의 상상 속 인물이 시대를 직면하면서 겪는 희로애락과 시의 창작 과정을 관객과 배우, 그리고 무대를 연결하는 인터랙션 환경에서 표현한다.<br>
+오늘의 나(이 시대의 모든 동주들)와 과거의 나(시인 윤동주)를 연결하는 물의 여인(낭독자), 그리고 아이들의 시간여행을 매개하는 것은 상상력이다.<br>
+이 상상력의 체험이 무대 공간에 머무르지 않고 객석을 넘나들며 관객들의 상상력과 마주하는 공동 체험의 환경을 구축한다.<br>
+시인 윤동주가 집필한 ‘시’로 모든 대화가 구성된 시극 대본으로 구성되었다.<br><br>
+&ensp;기술이 인간을 앞서는 것이 아닌 기술과 예술이 인간의 삶을 기반으로 함께 어울리는 예술적 체험에 집중하였다.<br><br>
+<descriptionHead>&emsp; Visual</descriptionHead><br>
+&ensp;시인의 상상 세계, 시인의 또 다른 한 몸일 수도 있는 물의 여인의 상상이 아이들을 매개로 연결된다.<br>
+시인이 고통과 번민, 그리고 시 창작의 세계로 확장되는 과정에서 시인과 물의 여인의 움직임은 무대의 영상과 상호작용하며 함께 호흡한다.<br><br>
+<descriptionHead>&emsp; Audio</descriptionHead><br>
+&ensp;HRTF Binaural 환경에서 재생되는 사운드를 헤드폰을 통해 관객의 물리적 고개 자세를 반영하여 전달된다.<br>
+물의 여인의 손짓에 따라 방향성을 가진 소리가 객석의 8CH 스피커를 통해 관객에게 전달된다.<br>
         </description>
         </article>
 
@@ -877,7 +901,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         Trace
         <br>
-        Generative Audio Visual Art, 2018
+        Generative Audio Visual Art
+        <br>
+        12, 2018
         </stitle>
         <br>
         <br>
@@ -892,7 +918,12 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <br>
         <me>Kim Yuhwa</me>
+        <br>
+        <br>
         <description>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+움직임에 따른 Audio, Visual 의 생성과 합성을 통하여, 움직임이 남기는 흔적의 시청각적 표현과, 인터랙션 구조의 Feedback 혹은 Reverberation 현상을 재현하는 시도이다.<br>
+관객의 움직임으로부터 시작된 'Data' 가 'Visual' 을 생성, 'Visual' 로 인하여 'Audio' 가 출력, 또다시 'Audio' 가 'Visual' 에 영향을 주며 유기적으로 루프된다.<br>
         </description>
         </article>
       </p2>
@@ -924,7 +955,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         An Echo: Sound seen through Heart
         <br>
-        Modern dance, 2018
+        Modern dance
+        <br>
+        08.04, 2018
         </stitle>
         <br>
         <br>
@@ -978,7 +1011,9 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <me>Kim Yuhwa</me>, Huh Jungho
         <br>
+        <br>
         <description>
+        <!-- <descriptionTitle>&nbsp; Description</descriptionTitle><br><br> -->
         </description>
         </article>
       </p2>
@@ -1062,13 +1097,15 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <stitle>
         ###
         <br>
-        Media Perfomance Showcase, 2018
+        Media Perfomance Showcase
+        <br>
+        12.15, 2018
         </stitle>
         <br>
         <br>
         Audio reaction LED, Interactive Webpage with Realtime Projection, Generative Visual
         <br>
-        LED, DMX Decoder, UTP Cable, Projector, Speaker
+        LED, DMX Decoder, DMX USB, UTP Cable, Webcam, Projector, Speaker
         <br>
         Ableton Live, Max, VDMX, Syphon
         <br>
@@ -1104,7 +1141,14 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <strong><i>2D Designer</i></strong>
         <br>
         Kwon Youngmin
+        <br>
+        <br>
         <description>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+암전 속에서 타인의 시선과 접촉을 온전히 회피하려 하지만 항상 공유된 세상에 있는 우리는 그럴 수 없다.<br>
+공유된 세상에 대한 부정을 미디어 퍼포먼스를 통해 표현하고자 한다.<br><br>
+관객을 위해 준비된 웹페이지는 TCP/IP 를 통해 무대 위 스크린까지 연계된다.<br>
+관객들은 타인과 회피하려는 그를 디지털을 통하여 간섭하게 되고, 그는 공유된 세상의 거미줄에서 몸부림친다.<br>
         </description>
         </article>
       </p2>
