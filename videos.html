@@ -140,6 +140,10 @@ $(document).ready(function(){
     width: 80%;
     opacity: 0.7;
   }
+  footer{
+    background-color: rgba(0,0,0,0.5);
+    padding: 1% 5% 1% 5%;
+  }
 
   me {
     color: red;
@@ -147,6 +151,10 @@ $(document).ready(function(){
   }
   stitle {
     font-size: 130%;
+    font-weight: bold;
+  }
+  stitle2 {
+    font-size: 100%;
     font-weight: bold;
   }
   credit {
@@ -240,6 +248,8 @@ $(document).ready(function(){
 </style>
 </head>
 <body>
+  <svg id="fader"></svg>
+  <script>fadeInPage()</script>
   <section id="main" style="padding: 0 0 0 0;">
         <div class="target" id="0"></div>
   </section>
@@ -247,8 +257,6 @@ $(document).ready(function(){
     <nav class="navi">
       <ul>
         <li>
-          <svg id="fader"></svg>
-          <script>fadeInPage()</script>
           <a href="index.html">HOME</a>
         </li>
         <li>
@@ -260,11 +268,18 @@ $(document).ready(function(){
       </ul>
     </nav>
   </div>
+<!-- <article style="font-size: 110%; "> -->
+<div style="text-align: center; font-size: 105%;">
+  <SPAN STYLE="background-color:black;">
+    &ensp; Yuhwa &ensp; - &ensp;  PortFolio Web Page 2019 &ensp; - &ensp;  Works, Projects, Etudes&ensp;
+  </SPAN>
+</div>
+<!-- </article> -->
   <h1>VIDEOS</h1>
 
   <aside id="nav" style="margin-left: -10%;">
     <nav>
-        <a href="#0" class="scroll">TOP</a>
+        <a href="#0" class="scroll" style="background-color: black;">TOP</a>
         <a href="#1" class="scroll">Fluid</a>
         <a href="#2" class="scroll">regeneration</a>
         <a href="#3" class="scroll">Dots</a>
@@ -272,6 +287,7 @@ $(document).ready(function(){
         <a href="#5" class="scroll">Trace</a>
         <a href="#6" class="scroll">An Echo</a>
         <a href="#7" class="scroll">###</a>
+        <a href="#8" class="scroll" style="background-color: black; border-color: rgba(0,0,0,0);">CONTACT</a>
     </nav>
   </aside>
 
@@ -411,11 +427,13 @@ $(document).ready(function(){
         <br>
         <stitle>
         Fluid : a living planet
+        </stitle>
         <br>
+        <stitle2>
         Kinetic Installation
         <br>
         06.15 ~ 06.16, 2019
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Generation Virtual Stellar System Sound through 9CH Speakers
@@ -493,10 +511,10 @@ Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화�
 최종적으로 9개의 객체(8개의 행성과 1개의 항성) 에서 출력되는 8채널의 Output 이 Master 에서 믹스되어 출력된다.<br><br><br>
 <descriptionHead>&emsp; 메인 행성 Sound</descriptionHead><br>
 &ensp;메인 행성의 사운드는 웹캠으로 입력되는 행성 표면의 이미지를 사운드로 변환하였다.<br>
-행성이 만들어 내는 흐름을 웹캠으로 받아 흐름의 밀집도, 속도 등의 속성을 사운드 인터렉션 의 input 으로 받는 것에 구현 목적을 두었다.<br>
-OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집도가 특정 Threshold 에 따라 컬러가 변화하는 구조를 가졌다.<br>
-프로세스를 거친 이미지를 프레임마다 전체 픽셀 정보의 연산을 통해 사운드의 파형 변화를 주었다.<br>
-메인행성의 최종사운드 아웃풋은 가상 항성계 패치로 전달, 사운드 시그널을 통합 관리 하였다.<br>
+행성이 만들어 내는 흐름을 웹캠으로 받아 흐름의 밀집도, 속도 등의 속성을 사운드 인터렉션 의 input 으로 받는 것에 구현 목적을 두었다.<br><br>
+&ensp;OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집도가 특정 Threshold 에 따라 컬러가 변화하는 구조를 가졌다.<br>
+프로세스를 거친 이미지를 프레임마다 전체 픽셀 정보의 연산을 통해 사운드의 파형 변화를 주었다.<br><br>
+&ensp;메인행성의 최종사운드 아웃풋은 가상 항성계 패치로 전달, 사운드 시그널을 통합 관리 하였다.<br>
 가상 항성계 사운드와 충돌하지 않게 300 Hz 이하의 주파수 대역 중심으로 출력 되었고, 최종 전시에서는 행성 프레임과의 공진을 통해 진동으로도 메인 행성의 사운드를 감각 할 수 있도록 디자인 되었다.
 </description>
 </article>
@@ -514,9 +532,7 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
       regeneration
     </h2>
     <p>
-      Visualization of regeneration
-      <br>
-      06,2019
+      Visualization of regeneration, 2019
       <br>
       <br>
        <a href="regeneration/index.html"><img src="img//regeneration/regeneration.png" alt="regeneration" width="80%" height="480"></a>
@@ -531,11 +547,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         regeneration
+        </stitle>
         <br>
+        <stitle2>
         Visualization of regeneration
         <br>
         06, 2019
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Interactive Webpage
@@ -586,11 +604,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         Dots : Pixel Mickey Mousing
+        </stitle>
         <br>
+        <stitle2>
         Audio from Visual
         <br>
         06, 2019
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Mickey Mousing Audio Generation from Pixel
@@ -697,11 +717,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         Dongju : An Eternal Moment
+        </stitle>
         <br>
+        <stitle2>
         Theatre
         <br>
         01.26 ~ 02.03, 2019
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Real-time motion capture with 9-DOF IMU Sensors, Generative Audio Visual Interaction on Play
@@ -819,10 +841,10 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
 이 상상력의 체험이 무대 공간에 머무르지 않고 객석을 넘나들며 관객들의 상상력과 마주하는 공동 체험의 환경을 구축한다.<br>
 시인 윤동주가 집필한 ‘시’로 모든 대화가 구성된 시극 대본으로 구성되었다.<br><br>
 &ensp;기술이 인간을 앞서는 것이 아닌 기술과 예술이 인간의 삶을 기반으로 함께 어울리는 예술적 체험에 집중하였다.<br><br>
-<descriptionHead>&emsp; Visual</descriptionHead><br>
+<descriptionHead>&emsp; Visual Interaction</descriptionHead><br>
 &ensp;시인의 상상 세계, 시인의 또 다른 한 몸일 수도 있는 물의 여인의 상상이 아이들을 매개로 연결된다.<br>
 시인이 고통과 번민, 그리고 시 창작의 세계로 확장되는 과정에서 시인과 물의 여인의 움직임은 무대의 영상과 상호작용하며 함께 호흡한다.<br><br>
-<descriptionHead>&emsp; Audio</descriptionHead><br>
+<descriptionHead>&emsp; Audio Interaction</descriptionHead><br>
 &ensp;HRTF Binaural 환경에서 재생되는 사운드를 헤드폰을 통해 관객의 물리적 고개 자세를 반영하여 전달된다.<br>
 물의 여인의 손짓에 따라 방향성을 가진 소리가 객석의 8CH 스피커를 통해 관객에게 전달된다.<br>
         </description>
@@ -900,11 +922,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         Trace
+        </stitle>
         <br>
+        <stitle2>
         Generative Audio Visual Art
         <br>
         12, 2018
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Interactive Projection
@@ -922,7 +946,7 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <description>
         <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
-움직임에 따른 Audio, Visual 의 생성과 합성을 통하여, 움직임이 남기는 흔적의 시청각적 표현과, 인터랙션 구조의 Feedback 혹은 Reverberation 현상을 재현하는 시도이다.<br>
+&ensp;움직임에 따른 Audio, Visual 의 생성과 합성을 통하여, 움직임이 남기는 흔적의 시청각적 표현과, 인터랙션 구조의 Feedback 혹은 Reverberation 현상을 재현하는 시도이다.<br>
 관객의 움직임으로부터 시작된 'Data' 가 'Visual' 을 생성, 'Visual' 로 인하여 'Audio' 가 출력, 또다시 'Audio' 가 'Visual' 에 영향을 주며 유기적으로 루프된다.<br>
         </description>
         </article>
@@ -954,11 +978,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         An Echo: Sound seen through Heart
+        </stitle>
         <br>
+        <stitle2>
         Modern dance
         <br>
         08.04, 2018
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Sound interaction with objets
@@ -1096,11 +1122,13 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <stitle>
         ###
+        </stitle>
         <br>
+        <stitle2>
         Media Perfomance Showcase
         <br>
         12.15, 2018
-        </stitle>
+        </stitle2>
         <br>
         <br>
         Audio reaction LED, Interactive Webpage with Realtime Projection, Generative Visual
@@ -1145,7 +1173,7 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
         <br>
         <description>
         <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
-암전 속에서 타인의 시선과 접촉을 온전히 회피하려 하지만 항상 공유된 세상에 있는 우리는 그럴 수 없다.<br>
+&ensp;암전 속에서 타인의 시선과 접촉을 온전히 회피하려 하지만 항상 공유된 세상에 있는 우리는 그럴 수 없다.<br>
 공유된 세상에 대한 부정을 미디어 퍼포먼스를 통해 표현하고자 한다.<br><br>
 관객을 위해 준비된 웹페이지는 TCP/IP 를 통해 무대 위 스크린까지 연계된다.<br>
 관객들은 타인과 회피하려는 그를 디지털을 통하여 간섭하게 되고, 그는 공유된 세상의 거미줄에서 몸부림친다.<br>
@@ -1157,5 +1185,28 @@ OpenCV 프로세스를 거쳐 표면의 흐름을 캐치하고, 흐름의 밀집
     <br>
     <br>
     <br>
+    <section id="main" style="padding: 1% 0 1% 0;">
+      <div class="target" id="8"></div>
+    <p>
+    <td><a href="https://www.github.com/laelsirus" target="_blank">
+        <button style="background-color: rgba(0,0,0,0.5);" type="button"><img src="img/github.svg" width="30px" alt="github"></button>
+      </a></td>
+      <td><a href="https://www.vimeo.com/ael13" target="_blank">
+        <button style="background-color: rgba(0,0,0,0.5);" type="button"><img src="img/vimeo.svg" width="30px" alt="vimeo"></button>
+      </a></td>
+      <td><a href="https://www.youtube.com/channel/UCF5HOhvUjXvL09ELiPFeSuA" target="_blank">
+        <button style="background-color: rgba(0,0,0,0.5);" type="button"><img src="img/youtube.svg" width="30px" alt="youtube"></button>
+      </a></td>
+      <td><a href="http://www.facebook.com/laelsirus" target="_blank">
+        <button style="background-color: rgba(0,0,0,0.5);" type="button"><img src="img/facebook.svg" width="30px" alt="facebook"></button>
+      </a></td>
+      <td><a href="http://www.instagram.com/laelsirus" target="_blank">
+        <button style="background-color: rgba(0,0,0,0.5);" type="button"><img src="img/instagram.svg" width="30px" alt="instagram"></button>
+      </a></td>
+      <br>
+      <br>
+      laelsirus@gmail.com &ensp; lisevie13@gmail.com &ensp; +82-10-2138-1074
+  </p>
+</section>
 </body>
 </html>
