@@ -116,7 +116,8 @@ $(document).ready(function(){
   }
   h1{
     padding-left: 5%;
-    color:#FF3333AA;
+    color:#FF3333FF;
+    font-size: 200%;
   }
   h2{
     text-align: center;
@@ -253,11 +254,11 @@ $(document).ready(function(){
   <section id="main" style="padding: 0 0 0 0;">
         <div class="target" id="0"></div>
   </section>
-  <div class="container">
-    <nav class="navi" style="font-size: 130%; line-height: 90%">
-      <br>
-      <a href="https://laelsirus.github.io/AelWorks" style="width: 100%">
-      Yuhwa PortFolio&ensp; - &ensp;Works, Projects, Etudes
+  <div class="container" style="background-color: rgba(0,0,0,0.5);">
+    <nav class="navi" style="font-size: 130%; line-height: 90%; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
+    <br>
+    <a href="https://laelsirus.github.io/AelWorks" style="width: 100%">
+      yuhwa - portfolio
     </a>
       <!-- <ul>
         <li>
@@ -277,7 +278,7 @@ $(document).ready(function(){
     &ensp; Yuhwa &ensp; - &ensp;  PortFolio Web Page 2019 &ensp; - &ensp;  Works, Projects, Etudes&ensp;
   </SPAN>
 </div> -->
-  <h1>VIDEOS</h1>
+  <h1>works, projects, etudes</h1>
 
   <aside id="nav" style="margin-left: -10%;">
     <nav>
@@ -289,7 +290,7 @@ $(document).ready(function(){
         <a href="#5" class="scroll">Trace</a>
         <a href="#6" class="scroll">An Echo</a>
         <a href="#7" class="scroll">###</a>
-        <a href="#8" class="scroll" style="background-color: black; border-color: rgba(0,0,0,0);">CONTACT</a>
+        <a href="#8" class="scroll" id="bottom" style="background-color: black; border-color: rgba(0,0,0,0);">CONTACT</a>
     </nav>
   </aside>
 
@@ -301,13 +302,35 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         $('.target').each(function() {
-            if($(window).scrollTop() >= $(this).offset().top-100) {
+            if($(window).scrollTop() >= $(this).offset().top-10) {
                 var id = $(this).attr('id');
                 $('#nav nav a').removeClass('active');
                 $('#nav nav a[href=#'+ id +']').addClass('active');
             }
         });
     });
+
+    $(window).scroll(function() {
+      var scrollHeight = $(document).height();
+      var scrollPosition = $(window).height() + $(window).scrollTop();
+      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+        $('#nav nav a').removeClass('active');
+        // $(document.getElementById("bottom")).css("background","rgba(255,0,0,0.5");
+      }
+      // else {
+      //   $(document.getElementById("bottom")).css("background","black");
+      // }
+    });
+
+//     $(window).scroll(function() {
+//   var scrollHeight = $(document).height();
+//   var scrollPosition = $(window).height() + $(window).scrollTop();
+//   if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+//     $("body").css("background","red");
+//   } else {
+//     $("body").css("background","white");
+//   }
+// });
   </script>
 
 
@@ -1187,27 +1210,27 @@ Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화�
     <br>
     <br>
     <br>
-    <section id="main" style="padding: 1px 0 1px 0;">
+    <section id="main" style="padding: 1px 0 1px 0; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
       <div class="target" id="8"></div>
     <p>
     <td><a href="https://www.github.com/laelsirus" target="_blank">
-        <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/github.svg" width="100%" alt="github"></button>
-      </a></td>
-      <td><a href="https://www.vimeo.com/ael13" target="_blank">
-        <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/vimeo.svg" width="100%" alt="vimeo"></button>
-      </a></td>
-      <td><a href="https://www.youtube.com/channel/UCF5HOhvUjXvL09ELiPFeSuA" target="_blank">
-        <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/youtube.svg" width="100%" alt="youtube"></button>
-      </a></td>
-      <td><a href="http://www.facebook.com/laelsirus" target="_blank">
-        <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;;" type="button"><img src="img/facebook.svg" width="100%" alt="facebook"></button>
-      </a></td>
-      <td><a href="http://www.instagram.com/laelsirus" target="_blank">
-        <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/instagram.svg" width="100%" alt="instagram"></button>
-      </a></td>
-      <br>
-      <br>
-      <SPAN STYLE="background-color:black;">&ensp;laelsirus@gmail.com&ensp;/&ensp;lisevie13@gmail.com&ensp;/&ensp;+82-10-2138-1074&ensp;</SPAN>
+      <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/github.svg" width="100%" alt="github"></button>
+    </a></td>&ensp;
+    <td><a href="https://www.vimeo.com/ael13" target="_blank">
+      <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/vimeo.svg" width="100%" alt="vimeo"></button>
+    </a></td>&ensp;
+    <td><a href="https://www.youtube.com/channel/UCF5HOhvUjXvL09ELiPFeSuA" target="_blank">
+      <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/youtube.svg" width="100%" alt="youtube"></button>
+    </a></td>&ensp;
+    <td><a href="http://www.facebook.com/laelsirus" target="_blank">
+      <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;;" type="button"><img src="img/facebook.svg" width="100%" alt="facebook"></button>
+    </a></td>&ensp;
+    <td><a href="http://www.instagram.com/laelsirus" target="_blank">
+      <button style="background-color: rgba(0,0,0,0.5); width: 7%; padding: 0;" type="button"><img src="img/instagram.svg" width="100%" alt="instagram"></button>
+    </a></td>
+    <br>
+    <br>
+    <SPAN STYLE="background-color:black; font-size:110%;">&ensp; &ensp;laelsirus@gmail.com&ensp;/&ensp;lisevie13@gmail.com&ensp;/&ensp;+82-10-2138-1074&ensp; &ensp;</SPAN>
   </p>
 </section>
 </body>
