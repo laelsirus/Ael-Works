@@ -117,7 +117,7 @@
     top:1%;bottom:auto;
     width:70%;
     text-align:center;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:1.8em;
     color:#fff;
     background:rgba(0,0,0,0.5);
@@ -196,7 +196,7 @@
     z-index:10;
     opacity:0.5;
     cursor:pointer;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:11px;
     line-height:1300%;
     -webkit-transition:all 0.7s;
@@ -441,7 +441,7 @@
     top:1%;bottom:auto;
     width:70%;
     text-align:center;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:1.8em;
     color:#fff;
     background:rgba(0,0,0,0.5);
@@ -520,7 +520,7 @@
     z-index:10;
     opacity:0.5;
     cursor:pointer;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:11px;
     line-height:1300%;
     -webkit-transition:all 0.7s;
@@ -762,7 +762,7 @@
     top:1%;bottom:auto;
     width:70%;
     text-align:center;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:1.8em;
     color:#fff;
     background:rgba(0,0,0,0.5);
@@ -841,7 +841,7 @@
     z-index:10;
     opacity:0.5;
     cursor:pointer;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:11px;
     line-height:1300%;
     -webkit-transition:all 0.7s;
@@ -1083,7 +1083,7 @@
     top:1%;bottom:auto;
     width:70%;
     text-align:center;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:1.8em;
     color:#fff;
     background:rgba(0,0,0,0.5);
@@ -1162,7 +1162,7 @@
     z-index:10;
     opacity:0.5;
     cursor:pointer;
-    font-family:sans-serif;
+    /*font-family:sans-serif;*/
     font-size:11px;
     line-height:1300%;
     -webkit-transition:all 0.7s;

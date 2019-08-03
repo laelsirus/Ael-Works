@@ -6,6 +6,7 @@
 <link href="slider/ninja-slider.css" rel="stylesheet" type="text/css" />
 <link href="slider/thumbnail-slider.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css?Version=1.0" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,900|Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="slider/ninjaVideoPlugin.js"></script>
 <script src="slider/ninja-slider.js" type="text/javascript"></script>
@@ -97,9 +98,11 @@ $(document).ready(function(){
 </script>
 <style>
   body{
-    background-color:black;
+    background-color:rgba(0,0,0,0.5);
     background-image:url(img/particle02.png);
+    background-blend-mode: multiply;
     background-attachment: fixed;
+    font-family: 'Gothic A1', sans-serif;
     color:white;
     margin-left: 9%;
     margin-right: 9%;
@@ -116,13 +119,17 @@ $(document).ready(function(){
   }
   h1{
     padding-left: 5%;
-    color:#FF3333FF;
+    color:white;
     font-size: 200%;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 2px;
   }
   h2{
     text-align: center;
     float: center;
     font-size: 180%;
+    font-family: 'Nanum Myeongjo', serif;
+    letter-spacing: 2px;
   }
   button {
     width:150px;
@@ -147,8 +154,8 @@ $(document).ready(function(){
   }
 
   me {
-    color: red;
-    font-weight: bold;
+    color: #FF7777FF;
+    font-weight: bolder;
   }
   stitle {
     font-size: 130%;
@@ -165,7 +172,7 @@ $(document).ready(function(){
   }
   article {
     background-color: rgba(0,0,0,0.5);
-    line-height: 1.5em;
+    line-height: 1.8em;
     text-align: center;
     padding: 0% 5% 0% 5%;
   }
@@ -211,8 +218,9 @@ $(document).ready(function(){
       text-decoration: none;
   }
   #nav a:hover, #nav a.active {
-      background: #FF333333;
-      color: #fff;
+      background: #FF111133;
+      color: white;
+      font-weight: bold;
   }
 
   #fader {
@@ -257,7 +265,7 @@ $(document).ready(function(){
   <div class="container" style="background-color: rgba(0,0,0,0.5);">
     <nav class="navi" style="font-size: 130%; line-height: 90%; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
     <br>
-    <a href="https://laelsirus.github.io/AelWorks" style="width: 100%">
+    <a href="https://laelsirus.github.io/AelWorks" style="width: 100%; font-family: 'Nanum Myeongjo', serif; letter-spacing: 2px;">
       yuhwa - portfolio
     </a>
       <!-- <ul>
@@ -313,13 +321,27 @@ $(document).ready(function(){
     $(window).scroll(function() {
       var scrollHeight = $(document).height();
       var scrollPosition = $(window).height() + $(window).scrollTop();
-      if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+      if ((scrollHeight - scrollPosition) / scrollHeight < 0.01) {
         $('#nav nav a').removeClass('active');
-        // $(document.getElementById("bottom")).css("background","rgba(255,0,0,0.5");
+        $(document.getElementById("bottom")).css("font-weight","bold");
+      }
+      else {
+        $(document.getElementById("bottom")).css("font-weight","normal");
       }
       // else {
       //   $(document.getElementById("bottom")).css("background","black");
       // }
+
+      // if ($(window).scrollTop() === 0) {
+      //   $('#nav nav a').removeClass('active');
+      // }
+
+
+
+      // console.log ('scrollHeight ' + scrollHeight);
+      // console.log ('scrollPosition ' + scrollPosition);
+      // console.log ('scrollTop ' + $(window).scrollTop());
+      // console.log ((scrollHeight - scrollPosition) / scrollHeight);
     });
 
 //     $(window).scroll(function() {
@@ -870,7 +892,7 @@ Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화�
 &ensp;시인의 상상 세계, 시인의 또 다른 한 몸일 수도 있는 물의 여인의 상상이 아이들을 매개로 연결된다.<br>
 시인이 고통과 번민, 그리고 시 창작의 세계로 확장되는 과정에서 시인과 물의 여인의 움직임은 무대의 영상과 상호작용하며 함께 호흡한다.<br><br>
 <descriptionHead>&emsp; Audio Interaction</descriptionHead><br>
-&ensp;HRTF Binaural 환경에서 재생되는 사운드를 헤드폰을 통해 관객의 물리적 고개 자세를 반영하여 전달된다.<br>
+&ensp;HRTF Binaural 환경에서 재생되는 사운드를 일부 관객의 고개 자세를 반영하여 헤드폰을 통해 전달하고, 동시에 8CH 스피커로 확장한다.<br>
 물의 여인의 손짓에 따라 방향성을 가진 소리가 객석의 8CH 스피커를 통해 관객에게 전달된다.<br>
         </description>
         </article>
