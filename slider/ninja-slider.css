@@ -11,6 +11,10 @@
     background:rgba(0,0,0,0.7);
 }
 
+#ninja-slider1:hover {
+    -webkit-transform: scale(1.5,1.5);
+}
+
 #ninja-slider1 .fs-icon {
     top:1%;
     right:1%;
