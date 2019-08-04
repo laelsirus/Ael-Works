@@ -8,6 +8,7 @@
 <link href="css/style.css?Version=1.0" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,900|Nanum+Myeongjo&display=swap&subset=korean" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/expander.js"></script>
 <script src="slider/ninjaVideoPlugin.js"></script>
 <script src="slider/ninja-slider.js" type="text/javascript"></script>
 <script src="slider/thumbnail-slider.js" type="text/javascript"></script>
@@ -151,6 +152,18 @@ $(document).ready(function(){
   footer{
     background-color: rgba(0,0,0,0.5);
     padding: 1% 5% 1% 5%;
+  }
+  input{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  input:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    opacity: 1;
   }
 
   me {
@@ -324,6 +337,24 @@ $(document).ready(function(){
         });
     });
   </script>
+<!--   <script>
+function sidebar_toggle(name) {
+  var root = document.documentElement;
+  var buttonText = document.getElementById(name);
+  if (~root.className.indexOf(' selector')) {
+    root.className = root.className.replace(' selector', '');
+    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1,1)");
+    buttonText.value = "확대";
+  } else {
+    root.className += ' selector';
+    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.5,1.5)");
+    buttonText.value = "축소";
+  };
+};
+  </script> -->
+
+
+
   <section id="main">    
       <div class="target" id="1"></div>
     
@@ -388,7 +419,7 @@ $(document).ready(function(){
                     <div class="caption">Record Stellar System Sound with HRTF for achive</div>
                 </li>
             </ul>
-            <div class="fs-icon" title="Expand/Close"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSFluid" onclick="sidebar_toggle_fluid();" value="확대"></div>
         </div>
         <div id="thumbnail-slider1">
                 <div class="inner">
@@ -591,7 +622,7 @@ description is under preparation.description is under preparation.description is
         <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
 &ensp;단순한 움직임을 가진 객체들의 집합으로 세포 재생, 손상, 결합 과정의 추상적 시각화를 목적에 두었다.<br>
 감염과 회복의 개념의 교차되며 각 객체들이 남긴 흔적은 나이테가 된다.<br>
-상처받고 아물고 흉터가 생기고 성장한다.<<br>
+상처받고 아물고 흉터가 생기고 성장한다.<br>
         </description>
         </article>
       </p2>
@@ -704,7 +735,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Tech flow chart</div>
                 </li>
             </ul>
-            <div class="fs-icon" title="Expand/Close"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSDongju" onclick="sidebar_toggle_dongju();" value="확대"></div>
         </div>
         <div id="thumbnail-slider2">
                 <div class="inner">
@@ -912,7 +943,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Tech flow chart</div>
                 </li>
             </ul>
-            <div class="fs-icon" title="Expand/Close"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSTrace" onclick="sidebar_toggle_trace();" value="확대"></div>
         </div>
         <div id="thumbnail-slider3">
                 <div class="inner">
@@ -1112,7 +1143,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Rehearsal</div>
                 </li>
             </ul>
-            <div class="fs-icon" title="Expand/Close"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSSharp" onclick="sidebar_toggle_sharp();" value="확대"></div>
         </div>
         <div id="thumbnail-slider4">
                 <div class="inner">

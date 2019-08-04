@@ -10,12 +10,25 @@
 #ninja-slider1.fullscreen {
     background:rgba(0,0,0,0.7);
 }
-
-#ninja-slider1:hover {
-    -webkit-transform: scale(1.5,1.5);
+#ninja-slider1 .fs-iconButton {
+    top:1%;
+    right:1%;
+    width:60px;
+    height:26px;
+    background: rgba(0,0,0,0.1);
+    z-index:2;
+    color:white;
+    text-align:center;
+    color:white;
+    text-align:center;
+    font:bold 11px/26px arial;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:2px;
+    opacity:0.5;
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
 }
-
-#ninja-slider1 .fs-icon {
+/*#ninja-slider1 .fs-icon {
     top:1%;
     right:1%;
     width:60px;
@@ -30,7 +43,7 @@
     opacity:0.5;
     -webkit-transition:opacity 0.8s;
     transition:opacity 0.8s;
-}
+}*/
 
 #ninja-slider1 .slider-inner:hover .fs-icon,
 #ninja-slider1.fullscreen .fs-icon {
