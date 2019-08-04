@@ -310,7 +310,7 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         $('.target').each(function() {
-            if($(window).scrollTop() >= $(this).offset().top-10) {
+            if($(window).scrollTop() >= $(this).offset().top-300) {
                 var id = $(this).attr('id');
                 $('#nav nav a').removeClass('active');
                 $('#nav nav a[href=#'+ id +']').addClass('active');
@@ -335,7 +335,6 @@ $(document).ready(function(){
       // if ($(window).scrollTop() === 0) {
       //   $('#nav nav a').removeClass('active');
       // }
-
 
 
       // console.log ('scrollHeight ' + scrollHeight);
