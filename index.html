@@ -310,51 +310,20 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         $('.target').each(function() {
-            if($(window).scrollTop() >= $(this).offset().top-300) {
+            if($(window).scrollTop() > $(this).offset().top - 300) {
                 var id = $(this).attr('id');
                 $('#nav nav a').removeClass('active');
                 $('#nav nav a[href=#'+ id +']').addClass('active');
             }
+            if($(window).scrollTop() < 50) {
+                $('#nav nav a').removeClass('active');
+            }
+            if ($(window).scrollTop() + $(window).height() > $(document).height() - 50 ) {
+                $('#nav nav a').removeClass('active');
+            }
         });
     });
-
-    $(window).scroll(function() {
-      var scrollHeight = $(document).height();
-      var scrollPosition = $(window).height() + $(window).scrollTop();
-      if ((scrollHeight - scrollPosition) / scrollHeight < 0.01) {
-        $('#nav nav a').removeClass('active');
-        // $(document.getElementById("bottom")).css("font-weight","bold");
-      }
-      // else {
-      //   $(document.getElementById("bottom")).css("font-weight","normal");
-      // }
-      // else {
-      //   $(document.getElementById("bottom")).css("background","black");
-      // }
-
-      // if ($(window).scrollTop() === 0) {
-      //   $('#nav nav a').removeClass('active');
-      // }
-
-
-      // console.log ('scrollHeight ' + scrollHeight);
-      // console.log ('scrollPosition ' + scrollPosition);
-      // console.log ('scrollTop ' + $(window).scrollTop());
-      // console.log ((scrollHeight - scrollPosition) / scrollHeight);
-    });
-
-//     $(window).scroll(function() {
-//   var scrollHeight = $(document).height();
-//   var scrollPosition = $(window).height() + $(window).scrollTop();
-//   if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-//     $("body").css("background","red");
-//   } else {
-//     $("body").css("background","white");
-//   }
-// });
   </script>
-
-
   <section id="main">    
       <div class="target" id="1"></div>
     
