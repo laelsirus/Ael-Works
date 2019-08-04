@@ -5,12 +5,12 @@ function sidebar_toggle_fluid() {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1,1)");
     $(document.getElementById("ninja-slider1")).css("background-color","rgba(0,0,0,0)");
-    buttonText.value = "확대";
+    buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
     $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.3,1.3)");
     $(document.getElementById("ninja-slider1")).css("background-color","rgba(0,0,0,0.7");
-    buttonText.value = "축소";
+    buttonText.value = "CLOSE";
   };
 };
 
@@ -21,12 +21,12 @@ function sidebar_toggle_dongju() {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider2")).css("-webkit-transform","scale(1,1)");
     $(document.getElementById("ninja-slider2")).css("background-color","rgba(0,0,0,0)");
-    buttonText.value = "확대";
+    buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
     $(document.getElementById("ninja-slider2")).css("-webkit-transform","scale(1.3,1.3)");
     $(document.getElementById("ninja-slider2")).css("background-color","rgba(0,0,0,0.7");
-    buttonText.value = "축소";
+    buttonText.value = "CLOSE";
   };
 };
 
@@ -37,12 +37,12 @@ function sidebar_toggle_trace() {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider3")).css("-webkit-transform","scale(1,1)");
     $(document.getElementById("ninja-slider3")).css("background-color","rgba(0,0,0,0)");
-    buttonText.value = "확대";
+    buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
     $(document.getElementById("ninja-slider3")).css("-webkit-transform","scale(1.3,1.3)");
     $(document.getElementById("ninja-slider3")).css("background-color","rgba(0,0,0,0.7");
-    buttonText.value = "축소";
+    buttonText.value = "CLOSE";
   };
 };
 
@@ -53,11 +53,11 @@ function sidebar_toggle_sharp() {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider4")).css("-webkit-transform","scale(1,1)");
     $(document.getElementById("ninja-slider4")).css("background-color","rgba(0,0,0,0)");
-    buttonText.value = "확대";
+    buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
     $(document.getElementById("ninja-slider4")).css("-webkit-transform","scale(1.3,1.3)");
     $(document.getElementById("ninja-slider4")).css("background-color","rgba(0,0,0,0.7");
-    buttonText.value = "축소";
+    buttonText.value = "CLOSE";
   };
 };

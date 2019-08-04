@@ -158,6 +158,8 @@ $(document).ready(function(){
     color: white;
     cursor: pointer;
     opacity: 0.5;
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
   }
   input:hover{
     background-color: rgba(0,0,0,0.5);
@@ -344,11 +346,11 @@ function sidebar_toggle(name) {
   if (~root.className.indexOf(' selector')) {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1,1)");
-    buttonText.value = "확대";
+    buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
     $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.5,1.5)");
-    buttonText.value = "축소";
+    buttonText.value = "CLOSE";
   };
 };
   </script> -->
@@ -419,7 +421,7 @@ function sidebar_toggle(name) {
                     <div class="caption">Record Stellar System Sound with HRTF for achive</div>
                 </li>
             </ul>
-            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSFluid" onclick="sidebar_toggle_fluid();" value="확대"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSFluid" onclick="sidebar_toggle_fluid();" value="EXPAND"></div>
         </div>
         <div id="thumbnail-slider1">
                 <div class="inner">
@@ -735,7 +737,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Tech flow chart</div>
                 </li>
             </ul>
-            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSDongju" onclick="sidebar_toggle_dongju();" value="확대"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSDongju" onclick="sidebar_toggle_dongju();" value="EXPAND"></div>
         </div>
         <div id="thumbnail-slider2">
                 <div class="inner">
@@ -943,7 +945,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Tech flow chart</div>
                 </li>
             </ul>
-            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSTrace" onclick="sidebar_toggle_trace();" value="확대"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSTrace" onclick="sidebar_toggle_trace();" value="EXPAND"></div>
         </div>
         <div id="thumbnail-slider3">
                 <div class="inner">
@@ -1143,7 +1145,7 @@ description is under preparation.description is under preparation.description is
                     <div class="caption">Rehearsal</div>
                 </li>
             </ul>
-            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSSharp" onclick="sidebar_toggle_sharp();" value="확대"></div>
+            <div class="fs-iconButton" title="Expand/Close"><input type="button" id="FSSharp" onclick="sidebar_toggle_sharp();" value="EXPAND"></div>
         </div>
         <div id="thumbnail-slider4">
                 <div class="inner">
