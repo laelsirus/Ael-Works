@@ -11,7 +11,7 @@
     background:rgba(0,0,0,0.7);
 }
 
-/*#ninja-slider1 .fs-icon {
+#ninja-slider1 .fs-icon {
     top:1%;
     right:1%;
     width:60px;
@@ -26,7 +26,7 @@
     opacity:0.5;
     -webkit-transition:opacity 0.8s;
     transition:opacity 0.8s;
-}*/
+}
 
 #ninja-slider1 .slider-inner:hover .fs-icon,
 #ninja-slider1.fullscreen .fs-icon {
