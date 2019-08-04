@@ -1,7 +1,7 @@
 /*------startSlider------*/
 #thumbnail-slider1 {
-    -webkit-transform: scale(0.7);
-    transform:scale(0.7);
+    -webkit-transform: scale(0.8);
+    transform:scale(0.8);
     transition:transform 0.25s;
     opacity:0.95;
 
@@ -72,7 +72,7 @@
 }
 
 #thumbnail-slider1 ul li.active {
-    border-color:#ff333377;
+    border-color:#ff3333FF;
 }
 
 #thumbnail-slider1 li:hover {
@@ -96,8 +96,11 @@
 #thumbnail-slider1 li > span {
     position:absolute;
     color:white;
-    font-size:26px;
-    bottom:2px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px 0px black;
+    font-size: 20px;
+    bottom: 2px;
+    right: 2px;
 }
 
 
@@ -177,8 +180,8 @@
 
 /*------startSlider------*/
 #thumbnail-slider2 {
-    -webkit-transform: scale(0.7);
-    transform:scale(0.7);
+    -webkit-transform: scale(0.8);
+    transform:scale(0.8);
     transition:transform 0.25s;
     opacity:0.95;
 
@@ -249,7 +252,7 @@
 }
 
 #thumbnail-slider2 ul li.active {
-    border-color:#ff333377;
+    border-color:#ff3333FF;
 }
 
 #thumbnail-slider2 li:hover {
@@ -273,8 +276,11 @@
 #thumbnail-slider2 li > span {
     position:absolute;
     color:white;
-    font-size:26px;
-    bottom:2px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px 0px black;
+    font-size: 20px;
+    bottom: 2px;
+    right: 2px;
 }
 
 
@@ -353,8 +359,8 @@
 
 /*------startSlider------*/
 #thumbnail-slider3 {
-    -webkit-transform: scale(0.7);
-    transform:scale(0.7);
+    -webkit-transform: scale(0.8);
+    transform:scale(0.8);
     transition:transform 0.25s;
     opacity:0.95;
 
@@ -425,7 +431,7 @@
 }
 
 #thumbnail-slider3 ul li.active {
-    border-color:#ff333377;
+    border-color:#ff3333FF;
 }
 
 #thumbnail-slider3 li:hover {
@@ -449,8 +455,11 @@
 #thumbnail-slider3 li > span {
     position:absolute;
     color:white;
-    font-size:26px;
-    bottom:2px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px 0px black;
+    font-size: 20px;
+    bottom: 2px;
+    right: 2px;
 }
 
 
@@ -529,8 +538,8 @@
 
 /*------startSlider------*/
 #thumbnail-slider4 {
-    -webkit-transform: scale(0.7);
-    transform:scale(0.7);
+    -webkit-transform: scale(0.8);
+    transform:scale(0.8);
     transition:transform 0.25s;
     opacity:0.95;
 
@@ -601,7 +610,7 @@
 }
 
 #thumbnail-slider4 ul li.active {
-    border-color:#ff333377;
+    border-color:#ff3333FF;
 }
 
 #thumbnail-slider4 li:hover {
@@ -625,8 +634,11 @@
 #thumbnail-slider4 li > span {
     position:absolute;
     color:white;
-    font-size:26px;
-    bottom:2px;
+    background-color: rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px 0px black;
+    font-size: 20px;
+    bottom: 2px;
+    right: 2px;
 }
 
 
