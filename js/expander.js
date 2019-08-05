@@ -14,6 +14,7 @@ function sidebar_toggle_fluid() {
   };
 };
 
+
 function sidebar_toggle_dongju() {
   var root = document.documentElement;
   var buttonText = document.getElementById('FSDongju');
@@ -29,6 +30,7 @@ function sidebar_toggle_dongju() {
     buttonText.value = "CLOSE";
   };
 };
+
 
 function sidebar_toggle_trace() {
   var root = document.documentElement;
@@ -61,6 +63,7 @@ function sidebar_toggle_sharp() {
     buttonText.value = "CLOSE";
   };
 };
+
 
 function sidebar_toggle_sound() {
   var root = document.documentElement;
