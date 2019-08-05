@@ -10,17 +10,17 @@
 #ninja-slider1.fullscreen {
     background:rgba(0,0,0,0.7);
 }
+
 #ninja-slider1 .fs-iconButton {
     top:1%;
-    right:1%;
+    left:1%;
     width:60px;
     height:26px;
     background: rgba(0,0,0,0.1);
-    z-index:2;
+    z-index:3;
     color:white;
     text-align:center;
-    color:white;
-    text-align:center;
+    position: absolute;
 }
 /*#ninja-slider1 .fs-icon {
     top:1%;
@@ -346,6 +346,18 @@
     background:rgba(0,0,0,0.7);
 }
 
+#ninja-slider2 .fs-iconButton {
+    top:1%;
+    left:1%;
+    width:60px;
+    height:26px;
+    background: rgba(0,0,0,0.1);
+    z-index:3;
+    color:white;
+    text-align:center;
+    position: absolute;
+}
+
 /*#ninja-slider2 .fs-icon {
     top:1%;
     right:1%;
@@ -665,6 +677,18 @@
 
 #ninja-slider3.fullscreen {
     background:rgba(0,0,0,0.7);
+}
+
+#ninja-slider3 .fs-iconButton {
+    top:1%;
+    left:1%;
+    width:60px;
+    height:26px;
+    background: rgba(0,0,0,0.1);
+    z-index:3;
+    color:white;
+    text-align:center;
+    position: absolute;
 }
 
 /*#ninja-slider3 .fs-icon {
@@ -988,6 +1012,18 @@
     background:rgba(0,0,0,0.7);
 }
 
+#ninja-slider4 .fs-iconButton {
+    top:1%;
+    left:1%;
+    width:60px;
+    height:26px;
+    background: rgba(0,0,0,0.1);
+    z-index:3;
+    color:white;
+    text-align:center;
+    position: absolute;
+}
+
 /*#ninja-slider4 .fs-icon {
     top:1%;
     right:1%;
@@ -1306,6 +1342,18 @@
 
 #ninja-slider5.fullscreen {
     background:rgba(0,0,0,0.7);
+}
+
+#ninja-slider1 .fs-iconButton {
+    top:1%;
+    left:1%;
+    width:60px;
+    height:26px;
+    background: rgba(0,0,0,0.1);
+    z-index:3;
+    color:white;
+    text-align:center;
+    position: absolute;
 }
 
 /*#ninja-slider5 .fs-icon {
