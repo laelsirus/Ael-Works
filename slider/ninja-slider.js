@@ -84,7 +84,7 @@ var nsOptions5 =
 {
     sliderId: "ninja-slider5",
     transitionType: "fade",
-    autoAdvance: true,
+    autoAdvance: false,
     rewind: true,
     delay: "default",
     transitionSpeed: 1000,

@@ -106,7 +106,7 @@ var thumbnailSliderOptions5 =
     autoAdvance: true,
     selectable: true,
     slideInterval: 3000,
-    transitionSpeed: 700,
+    transitionSpeed: 5000,
     shuffle: false,
     startSlideIndex: 0, //0-based
     pauseOnHover: true,
