@@ -61,3 +61,19 @@ function sidebar_toggle_sharp() {
     buttonText.value = "CLOSE";
   };
 };
+
+function sidebar_toggle_sound() {
+  var root = document.documentElement;
+  var buttonText = document.getElementById('FSSound');
+  if (~root.className.indexOf(' selector')) {
+    root.className = root.className.replace(' selector', '');
+    $(document.getElementById("ninja-slider5")).css("-webkit-transform","scale(1,1)");
+    $(document.getElementById("ninja-slider5")).css("background-color","rgba(0,0,0,0)");
+    buttonText.value = "EXPAND";
+  } else {
+    root.className += ' selector';
+    $(document.getElementById("ninja-slider5")).css("-webkit-transform","scale(1.4,1.4)");
+    $(document.getElementById("ninja-slider5")).css("background-color","rgba(0,0,0,0.7");
+    buttonText.value = "CLOSE";
+  };
+};

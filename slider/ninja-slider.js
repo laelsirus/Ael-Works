@@ -80,6 +80,26 @@ var nsOptions4 =
     license: "mylicense"
 };
 
+var nsOptions5 =
+{
+    sliderId: "ninja-slider5",
+    transitionType: "fade",
+    autoAdvance: true,
+    rewind: true,
+    delay: "default",
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
+    initSliderByCallingInitFunc: false,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    navigateByTap: false,
+    pauseOnHover: false,
+    keyboardNav: true,
+    n: false,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider5 != "undefined") mcThumbnailSlider5.display(nextIdx); },
+    license: "mylicense"
+};
+
 var nslider1 = new NinjaSlider(nsOptions1);
 
 var nslider2 = new NinjaSlider(nsOptions2);
@@ -87,3 +107,5 @@ var nslider2 = new NinjaSlider(nsOptions2);
 var nslider3 = new NinjaSlider(nsOptions3);
 
 var nslider4 = new NinjaSlider(nsOptions4);
+
+var nslider5 = new NinjaSlider(nsOptions5);

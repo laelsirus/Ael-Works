@@ -96,6 +96,27 @@ var thumbnailSliderOptions4 =
     license: "b2e98"
 };
 
+var thumbnailSliderOptions5 =
+{
+    sliderId: "thumbnail-slider5",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: true,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 700,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider5 != "undefined") nslider5.displaySlide(nextIdx); },
+    license: "b2e98"
+};
 
 var mcThumbnailSlider1 = new ThumbnailSlider(thumbnailSliderOptions1);
 
@@ -104,3 +125,5 @@ var mcThumbnailSlider2 = new ThumbnailSlider(thumbnailSliderOptions2);
 var mcThumbnailSlider3 = new ThumbnailSlider(thumbnailSliderOptions3);
 
 var mcThumbnailSlider4 = new ThumbnailSlider(thumbnailSliderOptions4);
+
+var mcThumbnailSlider5 = new ThumbnailSlider(thumbnailSliderOptions5);
