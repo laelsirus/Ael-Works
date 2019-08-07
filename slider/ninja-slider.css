@@ -342,6 +342,8 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
+    -webkit-transition:-webkit-transform 0.5s;
+    transition:-webkit-transform 0.5s;
 }
 
 #ninja-slider2.fullscreen {
@@ -675,6 +677,8 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
+    -webkit-transition:-webkit-transform 0.5s;
+    transition:-webkit-transform 0.5s;
 }
 
 #ninja-slider3.fullscreen {
@@ -1008,6 +1012,8 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
+    -webkit-transition:-webkit-transform 0.5s;
+    transition:-webkit-transform 0.5s;
 }
 
 #ninja-slider4.fullscreen {
@@ -1340,6 +1346,8 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
+    -webkit-transition:-webkit-transform 0.5s;
+    transition:-webkit-transform 0.5s;
 }
 
 #ninja-slider5.fullscreen {
