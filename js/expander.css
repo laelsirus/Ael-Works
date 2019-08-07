@@ -1,12 +1,7 @@
 .emphasized {
-
-position:fixed;
-
-top:150px;
-
-left:0px;
-
-box-shadow : rgba(0,0,0,0.7) 0 0 0 9999px, rgba(0,0,0,0.7) 2px 2px 3px 3px;
-
-z-index : 100;
+	position:fixed;
+	top:150px;
+	left:0px;
+	box-shadow : rgba(0,0,0,0.7) 0 0 0 9999px, rgba(0,0,0,0.7) 2px 2px 3px 3px;
+	z-index : 100;
 }
