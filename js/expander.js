@@ -13,6 +13,14 @@ function sidebar_toggle_fluid() {
     $(document.getElementById("ninja-slider1")).css("background-color","rgba(0,0,0,0.7");
     $(document.getElementById("ninja-slider1")).toggleClass("emphasized");
     buttonText.value = "CLOSE";
+
+    // $(document).mouseup(function (e){
+    //   // var container = $("#ninja-slider1");
+    //   var container = $(document.getElementsByClassName('sliderClass'));
+    //   if( container.has(e.target).length === 0)
+    //     // container.hide();
+    //     alert('영역 밖입니다.');
+    // });
   };
 };
 
