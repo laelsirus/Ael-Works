@@ -5,11 +5,13 @@ function sidebar_toggle_fluid() {
     root.className = root.className.replace(' selector', '');
     $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1,1)");
     $(document.getElementById("ninja-slider1")).css("background-color","rgba(0,0,0,0)");
+    $(document.getElementById("ninja-slider1")).toggleClass("emphasized");
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.4,1.4)");
+    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.2,1.2)");
     $(document.getElementById("ninja-slider1")).css("background-color","rgba(0,0,0,0.7");
+    $(document.getElementById("ninja-slider1")).toggleClass("emphasized");
     buttonText.value = "CLOSE";
   };
 };
