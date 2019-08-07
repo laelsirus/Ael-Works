@@ -5,7 +5,6 @@
     margin:0 auto;
     overflow:hidden;
     box-sizing:border-box;
-
     -webkit-transition:-webkit-transform 0.5s;
     transition:-webkit-transform 0.5s;
 }
