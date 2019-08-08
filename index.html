@@ -59,8 +59,9 @@ jQuery(document).ready(function($) {
     $(".scroll").click(function(event){            
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+        $(document.getElementsByClassName("toggleClass")).css("display","none");
     });
-}); 
+});
 
 $(document).ready(function(){
   $("#fluid").click(function(){ 
@@ -473,10 +474,10 @@ function sidebar_toggle(name) {
 
     <p>
       <br>
-      <button id="fluid">ABOUT THIS WORK</button>
+      <button id="fluid" class="about">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="fluidToggle" style="display:none;">
+      <p2 id="fluidToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         Fluid : a living planet
@@ -596,10 +597,10 @@ Doppler 효과 또한 학습된 거리 차의 최대/최소값을 Pitch 변화�
 
     <p>
       <br>
-      <button id="regeneration">ABOUT THIS WORK</button>
+      <button id="regeneration" class="about">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="regenerationToggle" style="display:none;">
+      <p2 id="regenerationToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         regeneration
@@ -658,7 +659,7 @@ description is under preparation.description is under preparation.description is
       <button id="dots">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="dotsToggle" style="display:none;">
+      <p2 id="dotsToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         Dots : Pixel Mickey Mousing
@@ -775,7 +776,7 @@ description is under preparation.description is under preparation.description is
       <button id="dongju">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="dongjuToggle" style="display:none;">
+      <p2 id="dongjuToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         동주 : 찰나와 억겁
@@ -984,7 +985,7 @@ description is under preparation.description is under preparation.description is
       <button id="trace">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="traceToggle" style="display:none;">
+      <p2 id="traceToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         Trace
@@ -1044,7 +1045,7 @@ description is under preparation.description is under preparation.description is
       <button id="echo">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="echoToggle" style="display:none;">
+      <p2 id="echoToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         울림 : 마음으로 보는 소리
@@ -1192,7 +1193,7 @@ description is under preparation.description is under preparation.description is
       <button id="sharp">ABOUT THIS WORK</button>
       <br>
       <article>
-      <p2 id="sharpToggle" style="display:none;">
+      <p2 id="sharpToggle" class="toggleClass" style="display:none;">
         <br>
         <stitle>
         ###

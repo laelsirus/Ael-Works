@@ -14,9 +14,10 @@ function sidebar_toggle_fluid() {
     //     // container.hide();
     //     alert('영역 밖입니다.');
     // });
+
+    // document.getElementById('fluid').click();
   };
 };
-
 
 function sidebar_toggle_dongju() {
   var root = document.documentElement;
