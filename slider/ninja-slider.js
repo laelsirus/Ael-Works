@@ -872,9 +872,11 @@ function NinjaSlider(a) {
                     if (c) {
                         C(j, "fullscreen");
                         k[P][d].overflow = "auto"
+                        document.getElementById('FSFluid').value = "EXPAND";
                     } else {
                         o(j, "fullscreen");
                         k[P][d].overflow = "hidden"
+                        document.getElementById('FSFluid').value = "CLOSE";
                     }
                     typeof fsIconClick == "function" && fsIconClick(c, j);
                     c = !c;
