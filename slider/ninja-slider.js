@@ -876,7 +876,7 @@ function NinjaSlider(a) {
                     } else {
                         o(j, "fullscreen");
                         k[P][d].overflow = "hidden"
-                        document.getElementById('FSFluid').value = "CLOSE";
+                        document.getElementById('FSFluid').value = "ESC";
                     }
                     typeof fsIconClick == "function" && fsIconClick(c, j);
                     c = !c;

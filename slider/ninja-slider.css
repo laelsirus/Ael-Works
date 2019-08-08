@@ -52,7 +52,7 @@
 }
 
 #ninja-slider1.fullscreen .fs-icon::before {
-    content:"CLOSE";
+    content:"ESC";
 }
 
 #ninja-slider1 .slider-inner {
@@ -389,7 +389,7 @@
 }
 
 #ninja-slider2.fullscreen .fs-icon::before {
-    content:"CLOSE";
+    content:"ESC";
 }
 
 #ninja-slider2 .slider-inner {
@@ -723,7 +723,7 @@
 }
 
 #ninja-slider3.fullscreen .fs-icon::before {
-    content:"CLOSE";
+    content:"ESC";
 }
 
 #ninja-slider3 .slider-inner {
@@ -1057,7 +1057,7 @@
 }
 
 #ninja-slider4.fullscreen .fs-icon::before {
-    content:"CLOSE";
+    content:"ESC";
 }
 
 #ninja-slider4 .slider-inner {
@@ -1390,7 +1390,7 @@
 }
 
 #ninja-slider5.fullscreen .fs-icon::before {
-    content:"CLOSE";
+    content:"ESC";
 }
 
 #ninja-slider5 .slider-inner {

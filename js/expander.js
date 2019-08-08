@@ -6,7 +6,7 @@ function sidebar_toggle_fluid() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "CLOSE";
+    buttonText.value = "ESC";
     // $(document).mouseup(function (e){
     //   // var container = $("#ninja-slider1");
     //   var container = $(document.getElementsByClassName('sliderClass'));
@@ -26,7 +26,7 @@ function sidebar_toggle_dongju() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "CLOSE";
+    buttonText.value = "ESC";
   };
 };
 
@@ -39,7 +39,7 @@ function sidebar_toggle_trace() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "CLOSE";
+    buttonText.value = "ESC";
   };
 };
 
@@ -51,7 +51,7 @@ function sidebar_toggle_sharp() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "CLOSE";
+    buttonText.value = "ESC";
   };
 };
 
@@ -64,6 +64,6 @@ function sidebar_toggle_sound() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "CLOSE";
+    buttonText.value = "ESC";
   };
 };
