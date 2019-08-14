@@ -56,6 +56,17 @@ function sidebar_toggle_sharp() {
   };
 };
 
+function sidebar_toggle_synesthesia() {
+  var root = document.documentElement;
+  var buttonText = document.getElementById('FSSynesthesia');
+  if (~root.className.indexOf(' selector')) {
+    root.className = root.className.replace(' selector', '');
+    buttonText.value = "EXPAND";
+  } else {
+    root.className += ' selector';
+    buttonText.value = "ESC";
+  };
+};
 
 function sidebar_toggle_sound() {
   var root = document.documentElement;

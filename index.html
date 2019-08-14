@@ -98,6 +98,17 @@ $(document).ready(function(){
     $("#sharpToggle").toggle(1000);
   });
 });
+$(document).ready(function(){
+  $("#synesthesia").click(function(){ 
+    $("#synesthesiaToggle").toggle(1000);
+  });
+});
+</script>
+<script>
+window.onkeydown = function() {
+  var kcode = event.keyCode;
+  if(kcode == 27) event.returnValue = false;
+}
 </script>
 <style>
   body{
@@ -318,8 +329,9 @@ $(document).ready(function(){
         <a href="#5" class="scroll">Trace</a>
         <a href="#6" class="scroll">An Echo</a>
         <a href="#7" class="scroll">###</a>
-        <a href="#8" class="scroll">Sound/Music</a>
-        <a href="#9" class="scroll" id="bottom" style="background-color: black; font-weight: bold; border-color: rgba(0,0,0,0);">CONTACT</a>
+        <a href="#8" class="scroll">Synesthesia</a>
+        <a href="#9" class="scroll">Sound/Music</a>
+        <a href="#10" class="scroll" id="bottom" style="background-color: black; font-weight: bold; border-color: rgba(0,0,0,0);">CONTACT</a>
     </nav>
   </aside>
 
@@ -1108,7 +1120,7 @@ description is under preparation.description is under preparation.description is
         <br>
         <strong><i>Music, Interaction Team</i></strong>
         <br>
-        <me>Kim Yuhwa</me>, Huh Jungho
+        <me>Kim Yuhwa</me>, Heo Jeongho
         <br>
         <description>
         <div style="opacity: 0; line-height: 0;">
@@ -1268,11 +1280,158 @@ description is under preparation.description is under preparation.description is
       </p2>
     </p>
     </section>
+
+    <br>
+    <hr>
+    <br>
+    <section id="main">
+      <div class="target" id="8"></div>
+    <h2>
+      Synesthesia
+    </h2>
+    <p>
+      Sound Installation, 2018
+      <br>
+      <br>
+      준비 중
+<!--       <iframe width="80%" height="480" src="none" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </p>
+
+
+    <!--startSlider-->
+    <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
+    <div id='ninja-slider5' class="sliderClass">
+        <div>
+        <div class="slider-inner">
+            <ul>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia01.png"></a>
+                    <div class="caption">Poster</div>
+                </li>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia02.png"></a>
+                    <div class="caption"></div>
+                </li>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia03.png"></a>
+                    <div class="caption"></div>
+                </li>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia04.png"></a>
+                    <div class="caption"></div>
+                </li>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia05.png"></a>
+                    <div class="caption"></div>
+                </li>
+                <li>
+                    <a class="ns-img" href="img/synesthesia/synesthesia06.png"></a>
+                    <div class="caption"></div>
+                </li>
+            </ul>
+            <div class="fs-iconButton" title="Expand/ESC"><input type="button" id="FSSynesthesia" onclick="sidebar_toggle_synesthesia();" value="EXPAND"></div>
+        </div>
+        <div id="thumbnail-slider5">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia01.png"></a>
+                            <span>1/6</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia02.png"></a>
+                            <span>2/6</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia03.png"></a>
+                            <span>3/6</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia04.png"></a>
+                            <span>4/6</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia05.png"></a>
+                            <span>5/6</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/synesthesia/thumb/synesthesia06.png"></a>
+                            <span>6/6</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--endSlider-->
+
+    <p>
+      <br>
+      <button id="synesthesia">ABOUT THIS WORK</button>
+      <br>
+      <article>
+      <p2 id="synesthesiaToggle" class="toggleClass" style="display:none;">
+        <br>
+        <stitle>
+        Synesthesia
+        </stitle>
+        <br>
+        <stitle2>
+        Sound Installation
+        <br>
+        06, 2018
+        </stitle2>
+<!--         <br>
+        <br>
+        Audio reactive LED lights, Interactive Webpage with Realtime Projection, Generative Visual
+        <br>
+        LED, DMX Decoder, DMX USB, UTP Cable, Webcam, Projector, Speaker
+        <br>
+        Ableton Live, Max, Arduino IDE, Pro Tools -->
+        <br>
+        <br>
+        <credit>Credit</credit>
+        <br>
+        <br>
+        C’est La Vie presents
+        <br>
+        <br>
+        <strong><i>General Director</strong></i>
+        <br>
+        Choe Jiwon
+        <br>
+        <br>
+        <strong><i>Sound Programming, Physical Computing</i></strong>
+        <br>
+        Heo Jeongho
+        <br>
+        <br>
+        <strong><i>Sound Programming, Sound Design</i></strong>
+        <br>
+        <me>Kim Yuhwa</me>
+        <br>
+        <description>
+        <div style="opacity: 0; line-height: 0;">
+description is under preparation.description is under preparation.description is under preparation.description is under preparation.description is under preparation.
+</div>
+<!--         <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+&ensp;암전 속에서 타인의 시선과 접촉을 온전히 회피하려 하지만 항상 공유된 세상에 있는 우리는 그럴 수 없다.<br>
+공유된 세상에 대한 부정을 미디어 퍼포먼스를 통해 표현하고자 한다.<br><br>
+&ensp;관객을 위해 준비된 웹페이지는 TCP/IP 를 통해 무대 위 스크린까지 연계된다.<br>
+관객들은 타인과 회피하려는 그를 디지털을 통하여 간섭하게 되고, 그는 공유된 세상의 거미줄에서 몸부림친다.<br>
+        </description> -->
+        </article>
+      </p2>
+    </p>
+    </section>
+
+
     <br>
 <hr>
     <br>
     <section id="main" style="padding-bottom: 0;">
-      <div class="target" id="8"></div>
+      <div class="target" id="9"></div>
     <h2>
       Sound Design, Music for Film, Theater
     </h2>
@@ -1280,7 +1439,7 @@ description is under preparation.description is under preparation.description is
     
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider5' class="sliderClass">
+    <div id='ninja-slider6' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1339,7 +1498,7 @@ description is under preparation.description is under preparation.description is
             </ul>
             <div class="fs-iconButton" title="Expand/ESC"><input type="button" id="FSSound" onclick="sidebar_toggle_sound();" value="EXPAND"></div>
         </div>
-        <div id="thumbnail-slider5">
+        <div id="thumbnail-slider6">
                 <div class="inner">
                     <ul>
                         <li>
@@ -1433,7 +1592,7 @@ description is under preparation.description is under preparation.description is
         </stitle>
         <br>
 < 나빌레라 > 손유진, 2017 : <me>Composition, Arrangement</me><br>
-< 그 가발 > 손유진, 2015 : <me>Composition, Arrangement</me><br><br>
+< 그 가발이 말하길 > 손유진, 2015 : <me>Composition, Arrangement</me><br><br>
 < 반디 > 손유진, 2015 : <me>Sound Design, Music Director</me><br>
         </article>
       </p2>
