@@ -4,8 +4,10 @@ function sidebar_toggle_fluid() {
   if (~root.className.indexOf(' selector')) {
     root.className = root.className.replace(' selector', '');
     buttonText.value = "EXPAND";
+    $("body,html").scrollTop($(document).height());
   } else {
     root.className += ' selector';
+    $("body,html").scrollTop($(document).height());
     // $(document).mouseup(function (e){
     //   // var container = $("#ninja-slider1");
     //   var container = $(document.getElementsByClassName('sliderClass'));
