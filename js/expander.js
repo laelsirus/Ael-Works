@@ -26,6 +26,7 @@ function sidebar_toggle_dongju() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
+    buttonText.value = "ESC";
   };
 };
 
@@ -38,6 +39,7 @@ function sidebar_toggle_trace() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
+    buttonText.value = "ESC";
   };
 };
 
@@ -49,6 +51,7 @@ function sidebar_toggle_sharp() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
+    buttonText.value = "ESC";
   };
 };
 
@@ -60,6 +63,7 @@ function sidebar_toggle_synesthesia() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
+    buttonText.value = "ESC";
   };
 };
 
@@ -71,5 +75,5 @@ function sidebar_toggle_sound() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-  };
+    buttonText.value = "ESC";
 };
