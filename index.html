@@ -108,6 +108,7 @@ $(document).ready(function(){
 window.onkeydown = function() {
   var kcode = event.keyCode;
   if(kcode == 27) event.returnValue = false;
+  if(kcode == 84) event.returnValue = $("body,html,ninja-slider1").scrollTop($(document).height());
 }
 </script>
 <style>
