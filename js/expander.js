@@ -6,7 +6,6 @@ function sidebar_toggle_fluid() {
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    buttonText.value = "ESC";
     // $(document).mouseup(function (e){
     //   // var container = $("#ninja-slider1");
     //   var container = $(document.getElementsByClassName('sliderClass'));
@@ -56,6 +55,17 @@ function sidebar_toggle_sharp() {
   };
 };
 
+function sidebar_toggle_synesthesia() {
+  var root = document.documentElement;
+  var buttonText = document.getElementById('FSSynesthesia');
+  if (~root.className.indexOf(' selector')) {
+    root.className = root.className.replace(' selector', '');
+    buttonText.value = "EXPAND";
+  } else {
+    root.className += ' selector';
+    buttonText.value = "ESC";
+  };
+};
 
 function sidebar_toggle_sound() {
   var root = document.documentElement;
@@ -66,5 +76,4 @@ function sidebar_toggle_sound() {
   } else {
     root.className += ' selector';
     buttonText.value = "ESC";
-  };
 };

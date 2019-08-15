@@ -94,7 +94,7 @@ var thumbnailSliderOptions5 =
     thumbWidth: "auto",
     thumbHeight: "50px",
     showMode: 3,
-    autoAdvance: true,
+    autoAdvance: false,
     selectable: true,
     slideInterval: 3000,
     transitionSpeed: 5000,
@@ -109,6 +109,28 @@ var thumbnailSliderOptions5 =
     license: "b2e98"
 };
 
+var thumbnailSliderOptions6 =
+{
+    sliderId: "thumbnail-slider6",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: true,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 5000,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider6 != "undefined") nslider6.displaySlide(nextIdx); },
+    license: "b2e98"
+};
+
 var mcThumbnailSlider1 = new ThumbnailSlider(thumbnailSliderOptions1);
 
 var mcThumbnailSlider2 = new ThumbnailSlider(thumbnailSliderOptions2);
@@ -118,6 +140,8 @@ var mcThumbnailSlider3 = new ThumbnailSlider(thumbnailSliderOptions3);
 var mcThumbnailSlider4 = new ThumbnailSlider(thumbnailSliderOptions4);
 
 var mcThumbnailSlider5 = new ThumbnailSlider(thumbnailSliderOptions5);
+
+var mcThumbnailSlider6 = new ThumbnailSlider(thumbnailSliderOptions6);
 
 
 function ThumbnailSlider(a) {
