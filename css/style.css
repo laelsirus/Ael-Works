@@ -36,12 +36,14 @@ a, a:hover, a:active, a:focus {
 	padding: 10px 25px 10px 10px;
 	display: block;
 	color:#fff;
-	width: 180px; 
+	width: 180px;
+	-webkit-transition:color 0.3s;
+    transition:color 0.3s;
 
 }
 .navi a:hover, .navi a:active, .navi a:focus {
 	text-shadow:0px 2px 2px #000;
-	color:#FF3333;
+	color:#FF7777;
 }
 
 .content {
