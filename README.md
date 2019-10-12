@@ -1,5 +1,5 @@
 # AelWorks
-Portfolio Web Page  
-https://laelsirus.github.io/AelWorks  
+Portfolio Web Page    
 http://ael.rf.gd  
-http://laelsirus.rf.gd
+http://laelsirus.rf.gd 
+https://laelsirus.github.io/AelWorks
