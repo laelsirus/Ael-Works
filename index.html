@@ -126,6 +126,28 @@ window.onkeydown = function() {
     margin-right: 9%;
     overflow: auto;
   }
+
+  .background {
+    background-color:black;
+    background-image: url("img/particle.png");
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .background .water {
+    background-color:black;
+    background-image: url("img/particle.png");
+    top:0;
+    left:0;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    filter: url("#turbulence");
+    z-index: -1;
+    position: fixed;
+  }
+
   section{
     background-color: rgba(255,255,255,0.07);
     padding: 5% 0 5% 0;
@@ -306,6 +328,20 @@ window.onkeydown = function() {
   <section id="main" style="padding: 0 0 0 0;">
         <div class="target" id="0"></div>
   </section>
+
+  <div class="background">
+      <div class="water"></div>
+  </div>
+
+  <svg>
+      <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.001 0.001"></feTurbulence>
+        <feDisplacementMap scale="1" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" 
+        keyTimes="0;0.5;1" values="0.02 0.02;0.04 0.04;0.02 0.02" repeatCount="indefinite"/>
+      </filter>
+  </svg>
+
   <div class="container" style="background-color: rgba(0,0,0,0.5);">
     <nav class="navi" style="font-size: 130%; line-height: 90%; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
     <br>
