@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="refresh" content="0;url=http://laelsirus.rf.gd">
-<!-- <meta http-equiv="refresh" content="0;url=http://laelsirus.rf.gd/"> -->
+<!-- <meta http-equiv="refresh" content="0;url=http://laelsirus.rf.gd"> -->
 <meta charset="utf-8">
 <title>Ael Works</title>
 <link href="style.css?Version=1.0" rel="stylesheet" type="text/css">
@@ -104,9 +103,10 @@ window.onkeydown = function() {
 
     if (isMobile()) {
       alert('현재 페이지는 모바일 환경에 최적화 되어있지 않습니다\n데스크탑 환경에서 접속을 권장합니다\nCurrent page is not optimized for mobile\nAccess from the desktop is recommended');
-
+      document.location = "http://laelsirus.rf.gd/mobile.html";
     }
     else {
+      document.location = "http://laelsirus.rf.gd";
     }
 </script>
 </body>
