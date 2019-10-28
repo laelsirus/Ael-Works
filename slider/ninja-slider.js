@@ -1,6 +1,6 @@
 var nsOptions1 =
 {
-    sliderId: "ninja-slider-fluid",
+    sliderId: "ninja-slider1",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -20,7 +20,7 @@ var nsOptions1 =
 
 var nsOptions2 =
 {
-    sliderId: "ninja-slider-dongju",
+    sliderId: "ninja-slider2",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -40,7 +40,7 @@ var nsOptions2 =
 
 var nsOptions3 =
 {
-    sliderId: "ninja-slider-trace",
+    sliderId: "ninja-slider3",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -60,7 +60,7 @@ var nsOptions3 =
 
 var nsOptions4 =
 {
-    sliderId: "ninja-slider-sharp",
+    sliderId: "ninja-slider4",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -80,7 +80,7 @@ var nsOptions4 =
 
 var nsOptions5 =
 {
-    sliderId: "ninja-slider-synesthesia",
+    sliderId: "ninja-slider5",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -100,7 +100,7 @@ var nsOptions5 =
 
 var nsOptions6 =
 {
-    sliderId: "ninja-slider-soundmusic",
+    sliderId: "ninja-slider6",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -118,6 +118,86 @@ var nsOptions6 =
     license: "mylicense"
 };
 
+var nsOptions7 =
+{
+    sliderId: "ninja-slider7",
+    transitionType: "fade",
+    autoAdvance: false,
+    rewind: true,
+    delay: "default",
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
+    initSliderByCallingInitFunc: false,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    navigateByTap: false,
+    pauseOnHover: false,
+    keyboardNav: true,
+    n: false,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider7 != "undefined") mcThumbnailSlider7.display(nextIdx); },
+    license: "mylicense"
+};
+
+var nsOptions8 =
+{
+    sliderId: "ninja-slider8",
+    transitionType: "fade",
+    autoAdvance: false,
+    rewind: true,
+    delay: "default",
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
+    initSliderByCallingInitFunc: false,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    navigateByTap: false,
+    pauseOnHover: false,
+    keyboardNav: true,
+    n: false,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider8 != "undefined") mcThumbnailSlider8.display(nextIdx); },
+    license: "mylicense"
+};
+
+var nsOptions9 =
+{
+    sliderId: "ninja-slider9",
+    transitionType: "fade",
+    autoAdvance: false,
+    rewind: true,
+    delay: "default",
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
+    initSliderByCallingInitFunc: false,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    navigateByTap: false,
+    pauseOnHover: false,
+    keyboardNav: true,
+    n: false,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider9 != "undefined") mcThumbnailSlider9.display(nextIdx); },
+    license: "mylicense"
+};
+
+var nsOptions10 =
+{
+    sliderId: "ninja-slider8",
+    transitionType: "fade",
+    autoAdvance: false,
+    rewind: true,
+    delay: "default",
+    transitionSpeed: 1000,
+    aspectRatio: "21:9", // "?:100%" is for responsive scaling based on window height
+    initSliderByCallingInitFunc: false,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    navigateByTap: false,
+    pauseOnHover: false,
+    keyboardNav: true,
+    n: false,
+    before: function (currentIdx, nextIdx, manual) { if (manual && typeof mcThumbnailSlider10 != "undefined") mcThumbnailSlider10.display(nextIdx); },
+    license: "mylicense"
+};
+
 var nslider1 = new NinjaSlider(nsOptions1);
 
 var nslider2 = new NinjaSlider(nsOptions2);
@@ -129,6 +209,14 @@ var nslider4 = new NinjaSlider(nsOptions4);
 var nslider5 = new NinjaSlider(nsOptions5);
 
 var nslider6 = new NinjaSlider(nsOptions6);
+
+var nslider7 = new NinjaSlider(nsOptions7);
+
+var nslider8 = new NinjaSlider(nsOptions8);
+
+var nslider9 = new NinjaSlider(nsOptions9);
+
+var nslider10 = new NinjaSlider(nsOptions10);
 
 
 

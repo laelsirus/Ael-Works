@@ -112,7 +112,7 @@ $(document).ready(function(){
 window.onkeydown = function() {
   var kcode = event.keyCode;
   if(kcode == 27) event.returnValue = false;
-  // if(kcode == 84) event.returnValue = $("body,html,ninja-slider-fluid,ninja-slider-fluid.fullscreen").scrollTop($(document).height());
+  // if(kcode == 84) event.returnValue = $("body,html,ninja-slider8,ninja-slider8.fullscreen").scrollTop($(document).height());
 }
 </script>
 <style>
@@ -326,9 +326,7 @@ window.onkeydown = function() {
 <body>
   <svg id="fader"></svg>
   <script>fadeInPage()</script>
-  <section id="main" style="padding: 0 0 0 0;">
-        <div class="target" id="0"></div>
-  </section>
+  
 
   <div class="background">
       <div class="water"></div>
@@ -342,6 +340,11 @@ window.onkeydown = function() {
         keyTimes="0;0.5;1" values="0.02 0.02;0.04 0.04;0.02 0.02" repeatCount="indefinite"/>
       </filter>
   </svg>
+
+
+  <section id="main" style="padding: 0 0 0 0;">
+        <div class="target" id="100"></div>
+  </section>
 
   <div class="container" style="background-color: rgba(0,0,0,0.5);">
     <nav class="navi" style="font-size: 130%; line-height: 90%; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
@@ -371,17 +374,17 @@ window.onkeydown = function() {
   </h1>
   <aside id="nav" style="margin-left: -10%; word-break:break-all; font-size: 95%; letter-spacing: -0.1vmin;">
     <nav>
-        <a href="#0" class="scroll" style="background-color: black; font-weight: bold;">TOP</a>
-        <a href="#1" class="scroll">Fluid</a>
-        <a href="#2" class="scroll">regeneration</a>
-        <a href="#3" class="scroll">Dots</a>
-        <a href="#4" class="scroll">Dongju</a>
+        <a href="#100" class="scroll" style="background-color: black; font-weight: bold;">TOP</a>
+        <a href="#9" class="scroll">Fluid</a>
+        <a href="#8" class="scroll">regeneration</a>
+        <a href="#7" class="scroll">Dots</a>
+        <a href="#6" class="scroll">Dongju</a>
         <a href="#5" class="scroll">Trace</a>
-        <a href="#6" class="scroll">An Echo</a>
-        <a href="#7" class="scroll">###</a>
-        <a href="#8" class="scroll">Synesthesia</a>
-        <a href="#9" class="scroll">Sound/Music</a>
-        <a href="#10" class="scroll" id="bottom" style="background-color: black; font-weight: bold; border-color: rgba(0,0,0,0);">CONTACT</a>
+        <a href="#4" class="scroll">An Echo</a>
+        <a href="#3" class="scroll">###</a>
+        <a href="#2" class="scroll">Synesthesia</a>
+        <a href="#1" class="scroll">Sound/Music</a>
+        <a href="#0" class="scroll" id="bottom" style="background-color: black; font-weight: bold; border-color: rgba(0,0,0,0);">CONTACT</a>
     </nav>
   </aside>
 
@@ -413,11 +416,11 @@ function sidebar_toggle(name) {
   var buttonText = document.getElementById(name);
   if (~root.className.indexOf(' selector')) {
     root.className = root.className.replace(' selector', '');
-    $(document.getElementById("ninja-slider-fluid")).css("-webkit-transform","scale(1,1)");
+    $(document.getElementById("ninja-slider8")).css("-webkit-transform","scale(1,1)");
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    $(document.getElementById("ninja-slider-fluid")).css("-webkit-transform","scale(1.5,1.5)");
+    $(document.getElementById("ninja-slider8")).css("-webkit-transform","scale(1.5,1.5)");
     buttonText.value = "ESC";
   };
 };
@@ -426,7 +429,7 @@ function sidebar_toggle(name) {
 
 
   <section id="main">    
-      <div class="target" id="1"></div>
+      <div class="target" id="9"></div>
     
     <h2>
       Fluid : a living planet
@@ -440,7 +443,7 @@ function sidebar_toggle(name) {
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-fluid' class="sliderClass">
+    <div id='ninja-slider8' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -611,7 +614,7 @@ description is under preparation.description is under preparation.description is
     <br>
     
     <section id="main">
-      <div class="target" id="2"></div>
+      <div class="target" id="8"></div>
     
     <h2>
       regeneration
@@ -673,7 +676,7 @@ description is under preparation.description is under preparation.description is
     <br>
 
     <section id="main">
-      <div class="target" id="3"></div>
+      <div class="target" id="7"></div>
     <h2>
       Dots : Pixel Mickey Mousing
     </h2>
@@ -732,7 +735,7 @@ description is under preparation.description is under preparation.description is
     <hr>
     <br>
     <section id="main">
-      <div class="target" id="4"></div>
+      <div class="target" id="6"></div>
     <h2>
       동주 : 찰나와 억겁
       <br>
@@ -747,7 +750,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-dongju' class="sliderClass">
+    <div id='ninja-slider6' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -982,7 +985,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-trace' class="sliderClass">
+    <div id='ninja-slider5' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1071,7 +1074,7 @@ description is under preparation.description is under preparation.description is
     <hr>
     <br>
     <section id="main">
-      <div class="target" id="6"></div>
+      <div class="target" id="4"></div>
     <h2>
       울림 : 마음으로 보는 소리
       <br>
@@ -1178,7 +1181,7 @@ description is under preparation.description is under preparation.description is
     <hr>
     <br>
     <section id="main">
-      <div class="target" id="7"></div>
+      <div class="target" id="3"></div>
     <h2>
       ###
     </h2>
@@ -1191,7 +1194,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-sharp' class="sliderClass">
+    <div id='ninja-slider3' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1317,7 +1320,7 @@ description is under preparation.description is under preparation.description is
     <hr>
     <br>
     <section id="main">
-      <div class="target" id="8"></div>
+      <div class="target" id="2"></div>
     <h2>
       Synesthesia
     </h2>
@@ -1332,7 +1335,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-synesthesia' class="sliderClass">
+    <div id='ninja-slider2' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1471,7 +1474,7 @@ description is under preparation.description is under preparation.description is
 <hr>
     <br>
     <section id="main" style="padding-bottom: 0;">
-      <div class="target" id="9"></div>
+      <div class="target" id="1"></div>
     <h2>
       Sound Design, Music for Film, Theater
     </h2>
@@ -1479,7 +1482,7 @@ description is under preparation.description is under preparation.description is
     
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider-soundmusic' class="sliderClass">
+    <div id='ninja-slider1' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1642,7 +1645,7 @@ description is under preparation.description is under preparation.description is
     <hr>
     <br>
     <section id="main" style="padding: 1px 0 1px 0; background-color: rgba(0,0,0,0.5); box-shadow: 0 0 3px 0px black;">
-      <div class="target" id="10"></div>
+      <div class="target" id="0"></div>
     <p>
     <td><a href="https://www.github.com/laelsirus" target="_blank">
       <button style="background-color: rgba(0,0,0,0.5); width: 7vmin; padding: 0;" type="button"><img src="img/github.svg" width="100%" alt="github"></button>

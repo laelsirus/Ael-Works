@@ -5,10 +5,10 @@ var thumbnailSliderOptions1 =
     thumbWidth: "auto",
     thumbHeight: "50px",
     showMode: 3,
-    autoAdvance: false,
+    autoAdvance: true,
     selectable: true,
     slideInterval: 3000,
-    transitionSpeed: 700,
+    transitionSpeed: 5000,
     shuffle: false,
     startSlideIndex: 0, //0-based
     pauseOnHover: true,
@@ -116,7 +116,7 @@ var thumbnailSliderOptions6 =
     thumbWidth: "auto",
     thumbHeight: "50px",
     showMode: 3,
-    autoAdvance: true,
+    autoAdvance: false,
     selectable: true,
     slideInterval: 3000,
     transitionSpeed: 5000,
@@ -131,6 +131,94 @@ var thumbnailSliderOptions6 =
     license: "b2e98"
 };
 
+var thumbnailSliderOptions7 =
+{
+    sliderId: "thumbnail-slider7",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: false,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 5000,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider7 != "undefined") nslider7.displaySlide(nextIdx); },
+    license: "b2e98"
+};
+
+var thumbnailSliderOptions8 =
+{
+    sliderId: "thumbnail-slider8",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: false,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 5000,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider8 != "undefined") nslider8.displaySlide(nextIdx); },
+    license: "b2e98"
+};
+
+var thumbnailSliderOptions9 =
+{
+    sliderId: "thumbnail-slider9",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: false,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 5000,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider9 != "undefined") nslider9.displaySlide(nextIdx); },
+    license: "b2e98"
+};
+
+var thumbnailSliderOptions10 =
+{
+    sliderId: "thumbnail-slider10",
+    orientation: "horizontal",
+    thumbWidth: "auto",
+    thumbHeight: "50px",
+    showMode: 3,
+    autoAdvance: false,
+    selectable: true,
+    slideInterval: 3000,
+    transitionSpeed: 5000,
+    shuffle: false,
+    startSlideIndex: 0, //0-based
+    pauseOnHover: true,
+    initSliderByCallingInitFunc: false,
+    rightGap: null,
+    keyboardNav: false,
+    mousewheelNav: true,
+    before: function (currentIdx, nextIdx, manual) { if (typeof nslider10 != "undefined") nslider10.displaySlide(nextIdx); },
+    license: "b2e98"
+};
+
 var mcThumbnailSlider1 = new ThumbnailSlider(thumbnailSliderOptions1);
 
 var mcThumbnailSlider2 = new ThumbnailSlider(thumbnailSliderOptions2);
@@ -142,6 +230,14 @@ var mcThumbnailSlider4 = new ThumbnailSlider(thumbnailSliderOptions4);
 var mcThumbnailSlider5 = new ThumbnailSlider(thumbnailSliderOptions5);
 
 var mcThumbnailSlider6 = new ThumbnailSlider(thumbnailSliderOptions6);
+
+var mcThumbnailSlider7 = new ThumbnailSlider(thumbnailSliderOptions7);
+
+var mcThumbnailSlider8 = new ThumbnailSlider(thumbnailSliderOptions8);
+
+var mcThumbnailSlider9 = new ThumbnailSlider(thumbnailSliderOptions9);
+
+var mcThumbnailSlider10 = new ThumbnailSlider(thumbnailSliderOptions10);
 
 
 function ThumbnailSlider(a) {
