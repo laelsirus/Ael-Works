@@ -1,6 +1,6 @@
 var nsOptions1 =
 {
-    sliderId: "ninja-slider1",
+    sliderId: "ninja-slider-fluid",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -20,7 +20,7 @@ var nsOptions1 =
 
 var nsOptions2 =
 {
-    sliderId: "ninja-slider2",
+    sliderId: "ninja-slider-dongju",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -40,7 +40,7 @@ var nsOptions2 =
 
 var nsOptions3 =
 {
-    sliderId: "ninja-slider3",
+    sliderId: "ninja-slider-trace",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -60,7 +60,7 @@ var nsOptions3 =
 
 var nsOptions4 =
 {
-    sliderId: "ninja-slider4",
+    sliderId: "ninja-slider-sharp",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -80,7 +80,7 @@ var nsOptions4 =
 
 var nsOptions5 =
 {
-    sliderId: "ninja-slider5",
+    sliderId: "ninja-slider-synesthesia",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
@@ -100,7 +100,7 @@ var nsOptions5 =
 
 var nsOptions6 =
 {
-    sliderId: "ninja-slider6",
+    sliderId: "ninja-slider-soundmusic",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,

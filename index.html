@@ -112,7 +112,7 @@ $(document).ready(function(){
 window.onkeydown = function() {
   var kcode = event.keyCode;
   if(kcode == 27) event.returnValue = false;
-  // if(kcode == 84) event.returnValue = $("body,html,ninja-slider1,ninja-slider1.fullscreen").scrollTop($(document).height());
+  // if(kcode == 84) event.returnValue = $("body,html,ninja-slider-fluid,ninja-slider-fluid.fullscreen").scrollTop($(document).height());
 }
 </script>
 <style>
@@ -427,11 +427,11 @@ function sidebar_toggle(name) {
   var buttonText = document.getElementById(name);
   if (~root.className.indexOf(' selector')) {
     root.className = root.className.replace(' selector', '');
-    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1,1)");
+    $(document.getElementById("ninja-slider-fluid")).css("-webkit-transform","scale(1,1)");
     buttonText.value = "EXPAND";
   } else {
     root.className += ' selector';
-    $(document.getElementById("ninja-slider1")).css("-webkit-transform","scale(1.5,1.5)");
+    $(document.getElementById("ninja-slider-fluid")).css("-webkit-transform","scale(1.5,1.5)");
     buttonText.value = "ESC";
   };
 };
@@ -454,7 +454,7 @@ function sidebar_toggle(name) {
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider1' class="sliderClass">
+    <div id='ninja-slider-fluid' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -635,6 +635,9 @@ description is under preparation.description is under preparation.description is
       <br>
       <br>
        <a href="regeneration/index.html"><img src="img//regeneration/regeneration.png" alt="regeneration" width="80%" height="480"></a>
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/I7PKc2LvTz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </p>
 
     <p>
@@ -758,7 +761,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider2' class="sliderClass">
+    <div id='ninja-slider-dongju' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -993,7 +996,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider3' class="sliderClass">
+    <div id='ninja-slider-trace' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1202,7 +1205,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider4' class="sliderClass">
+    <div id='ninja-slider-sharp' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1343,7 +1346,7 @@ description is under preparation.description is under preparation.description is
 
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider5' class="sliderClass">
+    <div id='ninja-slider-synesthesia' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
@@ -1490,7 +1493,7 @@ description is under preparation.description is under preparation.description is
     
     <!--startSlider-->
     <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
-    <div id='ninja-slider6' class="sliderClass">
+    <div id='ninja-slider-soundmusic' class="sliderClass">
         <div>
         <div class="slider-inner">
             <ul>
