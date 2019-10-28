@@ -1,6 +1,6 @@
-var thumbnailSliderOptions1 =
+var thumbnailSliderOptions-fluid =
 {
-    sliderId: "thumbnail-slider1",
+    sliderId: "thumbnail-slider-fluid",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -21,9 +21,9 @@ var thumbnailSliderOptions1 =
 };
 
 
-var thumbnailSliderOptions2 =
+var thumbnailSliderOptions-dongju =
 {
-    sliderId: "thumbnail-slider2",
+    sliderId: "thumbnail-slider-dongju",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -43,9 +43,9 @@ var thumbnailSliderOptions2 =
     license: "b2e98"
 };
 
-var thumbnailSliderOptions3 =
+var thumbnailSliderOptions-trace =
 {
-    sliderId: "thumbnail-slider3",
+    sliderId: "thumbnail-slider-trace",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -65,9 +65,9 @@ var thumbnailSliderOptions3 =
     license: "b2e98"
 };
 
-var thumbnailSliderOptions4 =
+var thumbnailSliderOptions-sharp =
 {
-    sliderId: "thumbnail-slider4",
+    sliderId: "thumbnail-slider-sharp",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -87,9 +87,9 @@ var thumbnailSliderOptions4 =
     license: "b2e98"
 };
 
-var thumbnailSliderOptions5 =
+var thumbnailSliderOptions-synesthesia =
 {
-    sliderId: "thumbnail-slider5",
+    sliderId: "thumbnail-slider-synesthesia",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -109,9 +109,9 @@ var thumbnailSliderOptions5 =
     license: "b2e98"
 };
 
-var thumbnailSliderOptions6 =
+var thumbnailSliderOptions-soundmusic =
 {
-    sliderId: "thumbnail-slider6",
+    sliderId: "thumbnail-slider-soundmusic",
     orientation: "horizontal",
     thumbWidth: "auto",
     thumbHeight: "50px",
@@ -131,17 +131,17 @@ var thumbnailSliderOptions6 =
     license: "b2e98"
 };
 
-var mcThumbnailSlider1 = new ThumbnailSlider(thumbnailSliderOptions1);
+var mcThumbnailSlider1 = new ThumbnailSlider(thumbnailSliderOptions-fluid);
 
-var mcThumbnailSlider2 = new ThumbnailSlider(thumbnailSliderOptions2);
+var mcThumbnailSlider2 = new ThumbnailSlider(thumbnailSliderOptions-dongju);
 
-var mcThumbnailSlider3 = new ThumbnailSlider(thumbnailSliderOptions3);
+var mcThumbnailSlider3 = new ThumbnailSlider(thumbnailSliderOptions-trace);
 
-var mcThumbnailSlider4 = new ThumbnailSlider(thumbnailSliderOptions4);
+var mcThumbnailSlider4 = new ThumbnailSlider(thumbnailSliderOptions-sharp);
 
-var mcThumbnailSlider5 = new ThumbnailSlider(thumbnailSliderOptions5);
+var mcThumbnailSlider5 = new ThumbnailSlider(thumbnailSliderOptions-synesthesia);
 
-var mcThumbnailSlider6 = new ThumbnailSlider(thumbnailSliderOptions6);
+var mcThumbnailSlider6 = new ThumbnailSlider(thumbnailSliderOptions-soundmusic);
 
 
 function ThumbnailSlider(a) {
