@@ -1,5 +1,5 @@
 /*------startSlider------*/
-#thumbnail-slider-fluid {
+#thumbnail-slider1 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -15,18 +15,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-fluid:hover {
+#thumbnail-slider1:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-fluid {
+#ninja-slider.fullscreen #thumbnail-slider1 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-fluid div.inner {
+#thumbnail-slider1 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -35,7 +35,7 @@
 }
 
  
-#thumbnail-slider-fluid div.inner ul {
+#thumbnail-slider1 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -50,7 +50,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-fluid ul li {
+#thumbnail-slider1 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -71,16 +71,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-fluid ul li.active {
+#thumbnail-slider1 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-fluid li:hover {
+#thumbnail-slider1 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-fluid .thumb {
+#thumbnail-slider1 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -93,7 +93,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-fluid li > span {
+#thumbnail-slider1 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -107,9 +107,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-fluid-pause-play {display:none;} /*.pause*/
+#thumbnail-slider1-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-fluid-prev, #thumbnail-slider-fluid-next
+#thumbnail-slider1-prev, #thumbnail-slider1-next
 {
     position: absolute;
     background-color:none;
@@ -126,20 +126,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-fluid-prev {
+#thumbnail-slider1-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-fluid-next {
+#thumbnail-slider1-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-fluid-next.disabled, #thumbnail-slider-fluid-prev.disabled {
+#thumbnail-slider1-next.disabled, #thumbnail-slider1-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-fluid-prev::before, #thumbnail-slider-fluid-next::before {
+#thumbnail-slider1-prev::before, #thumbnail-slider1-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -150,14 +150,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-fluid-prev::before {
+#thumbnail-slider1-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-fluid-next::before {
+#thumbnail-slider1-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -167,11 +167,11 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-fluid {
+    #thumbnail-slider1 {
         padding:0;
     }
 
-    #thumbnail-slider-fluid-prev, #thumbnail-slider-fluid-next {
+    #thumbnail-slider1-prev, #thumbnail-slider1-next {
         display:none;
     }
 }
@@ -179,7 +179,7 @@
 
 
 /*------startSlider------*/
-#thumbnail-slider-dongju {
+#thumbnail-slider2 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -195,18 +195,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-dongju:hover {
+#thumbnail-slider2:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-dongju {
+#ninja-slider.fullscreen #thumbnail-slider2 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-dongju div.inner {
+#thumbnail-slider2 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -215,7 +215,7 @@
 }
 
  
-#thumbnail-slider-dongju div.inner ul {
+#thumbnail-slider2 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -230,7 +230,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-dongju ul li {
+#thumbnail-slider2 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -251,16 +251,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-dongju ul li.active {
+#thumbnail-slider2 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-dongju li:hover {
+#thumbnail-slider2 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-dongju .thumb {
+#thumbnail-slider2 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -273,7 +273,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-dongju li > span {
+#thumbnail-slider2 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -287,9 +287,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-dongju-pause-play {display:none;} /*.pause*/
+#thumbnail-slider2-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-dongju-prev, #thumbnail-slider-dongju-next
+#thumbnail-slider2-prev, #thumbnail-slider2-next
 {
     position: absolute;
     background-color:none;
@@ -306,20 +306,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-dongju-prev {
+#thumbnail-slider2-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-dongju-next {
+#thumbnail-slider2-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-dongju-next.disabled, #thumbnail-slider-dongju-prev.disabled {
+#thumbnail-slider2-next.disabled, #thumbnail-slider2-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-dongju-prev::before, #thumbnail-slider-dongju-next::before {
+#thumbnail-slider2-prev::before, #thumbnail-slider2-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -330,14 +330,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-dongju-prev::before {
+#thumbnail-slider2-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-dongju-next::before {
+#thumbnail-slider2-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -347,18 +347,18 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-dongju {
+    #thumbnail-slider2 {
         padding:0;
     }
 
-    #thumbnail-slider-dongju-prev, #thumbnail-slider-dongju-next {
+    #thumbnail-slider2-prev, #thumbnail-slider2-next {
         display:none;
     }
 }
 /*------endSlider------*/
 
 /*------startSlider------*/
-#thumbnail-slider-trace {
+#thumbnail-slider3 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -374,18 +374,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-trace:hover {
+#thumbnail-slider3:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-trace {
+#ninja-slider.fullscreen #thumbnail-slider3 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-trace div.inner {
+#thumbnail-slider3 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -394,7 +394,7 @@
 }
 
  
-#thumbnail-slider-trace div.inner ul {
+#thumbnail-slider3 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -409,7 +409,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-trace ul li {
+#thumbnail-slider3 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -430,16 +430,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-trace ul li.active {
+#thumbnail-slider3 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-trace li:hover {
+#thumbnail-slider3 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-trace .thumb {
+#thumbnail-slider3 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -452,7 +452,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-trace li > span {
+#thumbnail-slider3 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -466,9 +466,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-trace-pause-play {display:none;} /*.pause*/
+#thumbnail-slider3-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-trace-prev, #thumbnail-slider-trace-next
+#thumbnail-slider3-prev, #thumbnail-slider3-next
 {
     position: absolute;
     background-color:none;
@@ -485,20 +485,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-trace-prev {
+#thumbnail-slider3-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-trace-next {
+#thumbnail-slider3-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-trace-next.disabled, #thumbnail-slider-trace-prev.disabled {
+#thumbnail-slider3-next.disabled, #thumbnail-slider3-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-trace-prev::before, #thumbnail-slider-trace-next::before {
+#thumbnail-slider3-prev::before, #thumbnail-slider3-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -509,14 +509,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-trace-prev::before {
+#thumbnail-slider3-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-trace-next::before {
+#thumbnail-slider3-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -526,18 +526,18 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-trace {
+    #thumbnail-slider3 {
         padding:0;
     }
 
-    #thumbnail-slider-trace-prev, #thumbnail-slider-trace-next {
+    #thumbnail-slider3-prev, #thumbnail-slider3-next {
         display:none;
     }
 }
 /*------endSlider------*/
 
 /*------startSlider------*/
-#thumbnail-slider-sharp {
+#thumbnail-slider4 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -553,18 +553,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-sharp:hover {
+#thumbnail-slider4:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-sharp {
+#ninja-slider.fullscreen #thumbnail-slider4 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-sharp div.inner {
+#thumbnail-slider4 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -573,7 +573,7 @@
 }
 
  
-#thumbnail-slider-sharp div.inner ul {
+#thumbnail-slider4 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -588,7 +588,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-sharp ul li {
+#thumbnail-slider4 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -609,16 +609,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-sharp ul li.active {
+#thumbnail-slider4 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-sharp li:hover {
+#thumbnail-slider4 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-sharp .thumb {
+#thumbnail-slider4 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -631,7 +631,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-sharp li > span {
+#thumbnail-slider4 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -645,9 +645,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-sharp-pause-play {display:none;} /*.pause*/
+#thumbnail-slider4-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-sharp-prev, #thumbnail-slider-sharp-next
+#thumbnail-slider4-prev, #thumbnail-slider4-next
 {
     position: absolute;
     background-color:none;
@@ -664,20 +664,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-sharp-prev {
+#thumbnail-slider4-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-sharp-next {
+#thumbnail-slider4-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-sharp-next.disabled, #thumbnail-slider-sharp-prev.disabled {
+#thumbnail-slider4-next.disabled, #thumbnail-slider4-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-sharp-prev::before, #thumbnail-slider-sharp-next::before {
+#thumbnail-slider4-prev::before, #thumbnail-slider4-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -688,14 +688,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-sharp-prev::before {
+#thumbnail-slider4-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-sharp-next::before {
+#thumbnail-slider4-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -705,18 +705,18 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-sharp {
+    #thumbnail-slider4 {
         padding:0;
     }
 
-    #thumbnail-slider-sharp-prev, #thumbnail-slider-sharp-next {
+    #thumbnail-slider4-prev, #thumbnail-slider4-next {
         display:none;
     }
 }
 /*------endSlider------*/
 
 /*------startSlider------*/
-#thumbnail-slider-synesthesia {
+#thumbnail-slider5 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -732,18 +732,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-synesthesia:hover {
+#thumbnail-slider5:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-synesthesia {
+#ninja-slider.fullscreen #thumbnail-slider5 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-synesthesia div.inner {
+#thumbnail-slider5 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -752,7 +752,7 @@
 }
 
  
-#thumbnail-slider-synesthesia div.inner ul {
+#thumbnail-slider5 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -767,7 +767,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-synesthesia ul li {
+#thumbnail-slider5 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -788,16 +788,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-synesthesia ul li.active {
+#thumbnail-slider5 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-synesthesia li:hover {
+#thumbnail-slider5 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-synesthesia .thumb {
+#thumbnail-slider5 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -810,7 +810,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-synesthesia li > span {
+#thumbnail-slider5 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -824,9 +824,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-synesthesia-pause-play {display:none;} /*.pause*/
+#thumbnail-slider5-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-synesthesia-prev, #thumbnail-slider-synesthesia-next
+#thumbnail-slider5-prev, #thumbnail-slider5-next
 {
     position: absolute;
     background-color:none;
@@ -843,20 +843,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-synesthesia-prev {
+#thumbnail-slider5-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-synesthesia-next {
+#thumbnail-slider5-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-synesthesia-next.disabled, #thumbnail-slider-synesthesia-prev.disabled {
+#thumbnail-slider5-next.disabled, #thumbnail-slider5-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-synesthesia-prev::before, #thumbnail-slider-synesthesia-next::before {
+#thumbnail-slider5-prev::before, #thumbnail-slider5-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -867,14 +867,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-synesthesia-prev::before {
+#thumbnail-slider5-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-synesthesia-next::before {
+#thumbnail-slider5-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -884,18 +884,18 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-synesthesia {
+    #thumbnail-slider5 {
         padding:0;
     }
 
-    #thumbnail-slider-synesthesia-prev, #thumbnail-slider-synesthesia-next {
+    #thumbnail-slider5-prev, #thumbnail-slider5-next {
         display:none;
     }
 }
 /*------endSlider------*/
 
 /*------startSlider------*/
-#thumbnail-slider-soundmusic {
+#thumbnail-slider6 {
     -webkit-transform: scale(0.8);
     transform:scale(0.8);
     transition:transform 0.25s;
@@ -911,18 +911,18 @@
     user-select:none;
 }
 
-#thumbnail-slider-soundmusic:hover {
+#thumbnail-slider6:hover {
     -webkit-transform: scale(1);
     transform:scale(1);
     opacity:1;
 }
 
-#ninja-slider.fullscreen #thumbnail-slider-soundmusic {
+#ninja-slider.fullscreen #thumbnail-slider6 {
     width:90%;
     max-width:1120px;
 }
 
-#thumbnail-slider-soundmusic div.inner {
+#thumbnail-slider6 div.inner {
     /*the followings should not be changed */
     position:relative;
     overflow:hidden;
@@ -931,7 +931,7 @@
 }
 
  
-#thumbnail-slider-soundmusic div.inner ul {
+#thumbnail-slider6 div.inner ul {
 
     /*the followings should not be changed */
     white-space:nowrap;
@@ -946,7 +946,7 @@
     height:auto!important;
 }
 
-#thumbnail-slider-soundmusic ul li {
+#thumbnail-slider6 ul li {
     opacity:1;
     overflow:visible;
     display:inline-block;
@@ -967,16 +967,16 @@
     transform:scale(1);
 }
 
-#thumbnail-slider-soundmusic ul li.active {
+#thumbnail-slider6 ul li.active {
     border-color:#ff3333FF;
 }
 
-#thumbnail-slider-soundmusic li:hover {
+#thumbnail-slider6 li:hover {
     border-color:rgba(255,255,255,0.7);
 }
 
 
-#thumbnail-slider-soundmusic .thumb {
+#thumbnail-slider6 .thumb {
     width:100%;
     height: 100%;
     background-size:contain;
@@ -989,7 +989,7 @@
 
 
 /* --------- Captions ------- */
-#thumbnail-slider-soundmusic li > span {
+#thumbnail-slider6 li > span {
     position:absolute;
     color:white;
     background-color: rgba(0,0,0,0.7);
@@ -1003,9 +1003,9 @@
 /* --------- navigation controls ------- */
 /* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
 
-#thumbnail-slider-soundmusic-pause-play {display:none;} /*.pause*/
+#thumbnail-slider6-pause-play {display:none;} /*.pause*/
 
-#thumbnail-slider-soundmusic-prev, #thumbnail-slider-soundmusic-next
+#thumbnail-slider6-prev, #thumbnail-slider6-next
 {
     position: absolute;
     background-color:none;
@@ -1022,20 +1022,20 @@
     *background-color:#ccc;/*IE7 hack*/
 }
 
-#thumbnail-slider-soundmusic-prev {
+#thumbnail-slider6-prev {
     left:0px; right:auto;
 }
 
-#thumbnail-slider-soundmusic-next {
+#thumbnail-slider6-next {
     left:auto; right:0px;
 }
-#thumbnail-slider-soundmusic-next.disabled, #thumbnail-slider-soundmusic-prev.disabled {
+#thumbnail-slider6-next.disabled, #thumbnail-slider6-prev.disabled {
     opacity:0.3;
     cursor:default;
 }
 
 /* arrows */
-#thumbnail-slider-soundmusic-prev::before, #thumbnail-slider-soundmusic-next::before {
+#thumbnail-slider6-prev::before, #thumbnail-slider6-next::before {
     position: absolute;
     top: 15px;
     content: "";
@@ -1046,14 +1046,14 @@
     border-top: 3px solid #DDD;
 }
 
-#thumbnail-slider-soundmusic-prev::before {
+#thumbnail-slider6-prev::before {
     left:14px;
     -ms-transform:rotate(-45deg);/*IE9*/
     -webkit-transform:rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#thumbnail-slider-soundmusic-next::before {
+#thumbnail-slider6-next::before {
     right:14px;
     -ms-transform:rotate(135deg);/*IE9*/
     -webkit-transform:rotate(135deg);
@@ -1063,11 +1063,11 @@
 /*Responsive settings*/
 @media only screen and (max-width:736px){
     
-    #thumbnail-slider-soundmusic {
+    #thumbnail-slider6 {
         padding:0;
     }
 
-    #thumbnail-slider-soundmusic-prev, #thumbnail-slider-soundmusic-next {
+    #thumbnail-slider6-prev, #thumbnail-slider6-next {
         display:none;
     }
 }

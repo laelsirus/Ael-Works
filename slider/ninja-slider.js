@@ -1,4 +1,4 @@
-var nsOptions-fluid =
+var nsOptions1 =
 {
     sliderId: "ninja-slider-fluid",
     transitionType: "fade",
@@ -18,7 +18,7 @@ var nsOptions-fluid =
     license: "mylicense"
 };
 
-var nsOptions-dongju =
+var nsOptions2 =
 {
     sliderId: "ninja-slider-dongju",
     transitionType: "fade",
@@ -38,7 +38,7 @@ var nsOptions-dongju =
     license: "mylicense"
 };
 
-var nsOptions-trace =
+var nsOptions3 =
 {
     sliderId: "ninja-slider-trace",
     transitionType: "fade",
@@ -58,7 +58,7 @@ var nsOptions-trace =
     license: "mylicense"
 };
 
-var nsOptions-sharp =
+var nsOptions4 =
 {
     sliderId: "ninja-slider-sharp",
     transitionType: "fade",
@@ -78,7 +78,7 @@ var nsOptions-sharp =
     license: "mylicense"
 };
 
-var nsOptions-synesthesia =
+var nsOptions5 =
 {
     sliderId: "ninja-slider-synesthesia",
     transitionType: "fade",
@@ -98,7 +98,7 @@ var nsOptions-synesthesia =
     license: "mylicense"
 };
 
-var nsOptions-soundmusic =
+var nsOptions6 =
 {
     sliderId: "ninja-slider-soundmusic",
     transitionType: "fade",
@@ -118,17 +118,17 @@ var nsOptions-soundmusic =
     license: "mylicense"
 };
 
-var nslider1 = new NinjaSlider(nsOptions-fluid);
+var nslider1 = new NinjaSlider(nsOptions1);
 
-var nslider2 = new NinjaSlider(nsOptions-dongju);
+var nslider2 = new NinjaSlider(nsOptions2);
 
-var nslider3 = new NinjaSlider(nsOptions-trace);
+var nslider3 = new NinjaSlider(nsOptions3);
 
-var nslider4 = new NinjaSlider(nsOptions-sharp);
+var nslider4 = new NinjaSlider(nsOptions4);
 
-var nslider5 = new NinjaSlider(nsOptions-synesthesia);
+var nslider5 = new NinjaSlider(nsOptions5);
 
-var nslider6 = new NinjaSlider(nsOptions-soundmusic);
+var nslider6 = new NinjaSlider(nsOptions6);
 
 
 
