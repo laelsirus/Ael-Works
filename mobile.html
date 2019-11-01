@@ -68,6 +68,11 @@ jQuery(document).ready(function($) {
 });
 
 $(document).ready(function(){
+  $("#transcen").click(function(){ 
+    $("#transcenToggle").toggle(1000);
+  });
+});
+$(document).ready(function(){
   $("#fluid").click(function(){ 
     $("#fluidToggle").toggle(1000);
   });
@@ -353,6 +358,7 @@ window.onkeydown = function() {
   <aside id="nav" style="margin-left: -3%; word-break:break-all; font-size: 150%; letter-spacing: -0.1vmin;">
     <nav>
         <a href="#100" class="scroll" style="background-color: black; font-weight: bold;">TOP</a>
+        <a href="#9" class="scroll">Trs</a>
         <a href="#9" class="scroll">Flu</a>
         <a href="#8" class="scroll">reg</a>
         <a href="#7" class="scroll">Dot</a>
@@ -404,6 +410,112 @@ function sidebar_toggle(name) {
 };
   </script> -->
 
+  <section id="main">    
+      <div class="target" id="10"></div>
+    
+    <h2>
+      Transcen
+    </h2>
+    <p>
+      Audio Visual, 2019
+      <br>
+      <br>
+      <iframe width="80%" height="480" src="https://www.youtube.com/embed/EDhQfNovVSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+    <!--startSlider-->
+    <div style="color:transparent;" "font-size: 0px;" "line-height: 0;">
+    <div id='ninja-slider10' class="sliderClass">
+        <div>
+        <div class="slider-inner">
+            <ul>
+                <li>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/w2kOB4PKJi4" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption">Trascen Render Process</div>
+                </li>
+                <li>
+                    <div class="video">
+                        <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/224212971&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    </div>
+                    <div class="caption">Transcen Origin</div>
+                </li>
+                <!-- <li>
+                    <a class="ns-img" href="img/fluid/fluid01.png"></a>
+                    <div class="caption">전시장 Set-up</div>
+                </li> -->
+            </ul>
+            <div class="fs-iconButton" title="Expand/ESC"><input type="button" id="FSTranscen" onclick="sidebar_toggle_transcen();" value="EXPAND"></div>
+        </div>
+        <!-- <div id="thumbnail-slider10">
+                <div class="inner">
+                    <ul>
+                        <li>
+                            <a class="thumb" href="img/fluid/thumb/fluidVideo01.png"></a>
+                            <span>1/8</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fluid/thumb/fluidVideo02.png"></a>
+                            <span>2/8</span>
+                        </li>
+                        <li>
+                            <a class="thumb" href="img/fluid/thumb/fluid01.png"></a>
+                            <span>3/8</span>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    </div>
+    <!--endSlider-->
+<!-- <div class="target" id="test"></div> -->
+    <p>
+      <br>
+      <!-- <a href="#test" class="scrollButton"> -->
+      <button id="transcen">ABOUT THIS WORK</button>
+      <!-- </a> -->
+      <br>
+      <article>
+      <p2 id="transcenToggle" class="toggleClass" style="display:none;">
+        <br>
+        <stitle>
+        Transcen
+        </stitle>
+        <br>
+        <stitle2>
+        Audio Visual
+        <br>
+        11.01, 2019
+        </stitle2>
+        <br>
+        <br>
+        Audio Visual
+        <br>
+        Ableton Live, Max, TouchDesigner
+        <br>
+        <br>
+        <credit>Credit</credit>
+        <br>
+        <br>
+        <me>김유화</me>
+        <br>
+        <description>
+        <div style="opacity: 0; line-height: 0;">
+description is under preparation.description is under preparation.description is under preparation.description is under preparation.description is under preparation.
+</div>
+        <descriptionTitle>&nbsp; Description</descriptionTitle><br><br>
+&ensp;Real time audio reactive visual<br>
+Granular audio in real time from <a href="https://soundcloud.com/lael13/transcen" target="_blank" style="color: rgba(255,200,255,1);">Transcen, 2015</a><br>
+</description>
+</article>
+      </p2>
+    </p>
+    </section>
+    <br>
+    <hr>
+    <br>
 
 
   <section id="main">    
@@ -435,7 +547,7 @@ function sidebar_toggle(name) {
                     <div class="video">
                         <iframe src="https://www.youtube.com/embed/Ex9VvZrYZ_E?enablejsapi=1&start=0&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" wmode="Opaque" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="caption">LED 제어를 위한 항성계 공전 운동에 따른 컬러 합성 실험 </div>
+                    <div class="caption">LED 제어를 위한 항성계 공전 운동에 따른 컬러 합성 실험</div>
                 </li>
                 <li>
                     <a class="ns-img" href="img/fluid/fluid01.png"></a>

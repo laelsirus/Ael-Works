@@ -180,7 +180,7 @@ var nsOptions9 =
 
 var nsOptions10 =
 {
-    sliderId: "ninja-slider8",
+    sliderId: "ninja-slider10",
     transitionType: "fade",
     autoAdvance: false,
     rewind: true,
