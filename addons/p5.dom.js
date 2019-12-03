@@ -423,7 +423,7 @@
    * @return {p5.Element} pointer to <a href="#/p5.Element">p5.Element</a> holding created node
    * @example
    * <div class='norender'><code>
-   * createImg('http://p5js.org/img/asterisk-01.png');
+   * createImg('http://p5js.org/img/asterisk-01.jpg');
    * </code></div>
    */
   /**
@@ -3195,7 +3195,7 @@
      */
     this.type = typeList[0];
     /**
-     * File subtype (usually the file extension jpg, png, xml, etc.)
+     * File subtype (usually the file extension jpg, jpg, xml, etc.)
      *
      * @property subtype
      */
