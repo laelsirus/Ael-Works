@@ -11,7 +11,7 @@ let cellSize;
 let healthy;
 
 function setup() {
-  title = createElement('h2', "<a href='javascript:history.go(-1)'>BACK</a>");
+  title = createElement('h2', "<a href='javascript:history.go(-1)' style='color: white'>BACK</a>");
   title.position(40, 0);
 
   canvas = createCanvas(windowWidth, windowHeight * 0.7);
